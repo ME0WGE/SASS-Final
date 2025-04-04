@@ -1,4 +1,28 @@
 @charset "UTF-8";
+/*
+|--------------------------------------------|
+|                   BODY                     |
+|--------------------------------------------|
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+|--------------------------------------------|
+|               NAV & HEADER                 |
+|--------------------------------------------|
+*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  background-size: cover;
+  height: 95vh;
+}
+
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
