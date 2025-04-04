@@ -42,17 +42,23 @@ header {
 |--------------------------------------------|
 */
 .section1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/about-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75)), url(../assets/img/about-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
   background-size: cover;
+  background-position-y: 75%;
   height: 100vh;
 }
 .section1 img[src="./public/assets/img/about.jpg"] {
   width: 40vw;
 }
 
+/*
+|--------------------------------------------|
+|               SECTION 4                    |
+|--------------------------------------------|
+*/
 .section4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/events-bg.jpg);
   background-repeat: no-repeat;
