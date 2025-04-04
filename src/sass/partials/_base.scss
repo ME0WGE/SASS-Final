@@ -28,6 +28,11 @@ header {
   z-index: -1;
   background-size: cover;
   height: 100vh;
+
+  .div-player {
+    border: 1vw solid $text-color-50;
+    border-radius: 50%;
+  }
 }
 /*
 |--------------------------------------------|
