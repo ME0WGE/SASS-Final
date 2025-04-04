@@ -19,7 +19,25 @@ header {
   background-attachment: fixed;
   z-index: -1;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
 }
 nav {
+}
+/*
+|--------------------------------------------|
+|               SECTION 1                    |
+|--------------------------------------------|
+*/
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../assets/img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  background-size: cover;
+  height: 100vh;
+
+  img[src="./public/assets/img/about.jpg"] {
+    width: 40vw;
+  }
 }
