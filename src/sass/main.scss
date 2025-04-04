@@ -10,4 +10,4 @@
 @use "./partials/mixins";
 // BOOTSTRAP
 @use "../../node_modules/bootstrap/scss/bootstrap.scss"
-  with($dark: $section-bg, $secondary: $card-menu-color);
+  with($dark: $section-bg, $secondary: $card-menu-color, $primary: $text-color);
