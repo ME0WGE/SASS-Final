@@ -27,6 +27,15 @@ body {
 |               NAV & HEADER                 |
 |--------------------------------------------|
 */
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.nav-link.active {
+  color: #cca35c !important;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
   background-repeat: no-repeat;
