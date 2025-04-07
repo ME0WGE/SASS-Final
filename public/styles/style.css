@@ -67,6 +67,19 @@ header .div-player {
 |               SECTION 2                    |
 |--------------------------------------------|
 */
+.cards {
+  padding: 3vw;
+  padding-bottom: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.cards:hover {
+  background-image: linear-gradient(#c49851);
+}
+.cards:hover .card-nb {
+  color: white !important;
+}
 /*
 |--------------------------------------------|
 |               SECTION 3                    |
