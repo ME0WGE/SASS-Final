@@ -114,6 +114,27 @@ header {
   background-size: cover;
   height: 100vh;
 }
+// u {
+//   text-decoration-color: $text-color;
+// }
+.price1::before {
+  content: "______";
+  position: absolute;
+  margin-top: 0.3vw;
+  color: $text-color;
+}
+.price2::before {
+  content: "______";
+  position: absolute;
+  margin-top: 0.3vw;
+  color: $text-color;
+}
+.price3::before {
+  content: "_____";
+  position: absolute;
+  margin-top: 0.3vw;
+  color: $text-color;
+}
 /*
 |--------------------------------------------|
 |               SECTION 5                    |
