@@ -257,19 +257,21 @@
         </h2>
       </div>
       <div
-        class="d-flex justify-content-center align-items-center menu-selection gap-5 m-3 p-3 fs-4"
+        class="d-flex justify-content-center align-items-center menu-selection gap-5 m-3 p-3 fs-5"
       >
-        <p><a href="#">All</a></p>
-        <p><a href="#">Starters</a></p>
-        <p><a href="#">Salads</a></p>
-        <p><a href="#">Speciality</a></p>
+        <p><a href="#all">All</a></p>
+        <p><a href="#starters">Starters</a></p>
+        <p><a href="#salads">Salads</a></p>
+        <p><a href="#specialty">Speciality</a></p>
       </div>
       <!-- MENU -->
-      <div class="menu d-flex flex-column justify-content-center pb-5">
+      <div
+        class="menu d-flex flex-column justify-content-center p-5 cards-menu"
+      >
         <!-- ROW 1 -->
         <div class="d-flex">
           <!-- CARD 1 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="specialty">
             <img
               src="./public/assets/img/menu/lobster-bisque.jpg"
               alt="Lobster Bisque"
@@ -287,7 +289,7 @@
             </div>
           </div>
           <!-- CARD 2 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="starters">
             <img
               src="./public/assets/img/menu/bread-barrel.jpg"
               alt="Bread Barrel"
@@ -308,7 +310,7 @@
         <!-- ROW 2 -->
         <div class="d-flex">
           <!-- CARD 1 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="specialty">
             <img
               src="./public/assets/img/menu/cake.jpg"
               alt="Crab Cake"
@@ -327,7 +329,7 @@
             </div>
           </div>
           <!-- CARD 2 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4 salads" id="salads">
             <img
               src="./public/assets/img/menu/caesar.jpg"
               alt="Caesar Selections"
@@ -348,7 +350,7 @@
         <!-- ROW 3 -->
         <div class="d-flex">
           <!-- CARD 1 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="specialty">
             <img
               src="./public/assets/img/menu/tuscan-grilled.jpg"
               alt="Tuscan Grilled"
@@ -367,7 +369,7 @@
             </div>
           </div>
           <!-- CARD 2 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="starters">
             <img
               src="./public/assets/img/menu/mozzarella.jpg"
               alt="Mozarella Stick"
@@ -388,7 +390,7 @@
         <!-- ROW 4 -->
         <div class="d-flex">
           <!-- CARD 1 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4 salads" id="salads">
             <img
               src="./public/assets/img/menu/greek-salad.jpg"
               alt="Greek Salad"
@@ -406,7 +408,7 @@
             </div>
           </div>
           <!-- CARD 2 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="salads">
             <img
               src="./public/assets/img/menu/spinach-salad.jpg"
               alt="Spinach Salad"
@@ -428,7 +430,7 @@
         <!-- ROW 5 -->
         <div class="d-flex">
           <!-- CARD 1 -->
-          <div class="d-flex m-4">
+          <div class="d-flex m-4" id="specialty">
             <img
               src="./public/assets/img/menu/lobster-roll.jpg"
               alt="Lobster Roll"
