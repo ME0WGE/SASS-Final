@@ -1,16 +1,17 @@
 @charset "UTF-8";
 /*
+|--------------------------------------------|
+|                  IMPORTS                   |
+|--------------------------------------------|
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+/*
             COLOR PALETTE
 |-----------------------------------|
 Sections >> background-color: #0C0B08;
 Cards >> background-color: #1A1814;
 Text >> color: #CCA35C;
 Footer >> background-color: #000000;
-*/
-/*
-|--------------------------------------------|
-|                  IMPORTS                   |
-|--------------------------------------------|
 */
 /*
 |--------------------------------------------|
@@ -27,6 +28,14 @@ body {
 |               NAV & HEADER                 |
 |--------------------------------------------|
 */
+nav {
+  font-family: Montserrat;
+}
+
+header {
+  font-family: Montserrat;
+}
+
 .nav-link {
   color: white !important;
   text-transform: uppercase;
