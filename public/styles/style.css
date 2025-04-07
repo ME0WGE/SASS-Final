@@ -193,8 +193,63 @@ header .div-player {
 |               SECTION 6                    |
 |--------------------------------------------|
 */
-.section6-img > img {
-  width: 20vw;
+.section6-img > div > img {
+  width: 24vw;
+}
+
+#gallery1,
+#gallery2,
+#gallery3,
+#gallery4 {
+  border-bottom: 4px solid #3d382b;
+  overflow: hidden;
+}
+
+#gallery5,
+#gallery6,
+#gallery7,
+#gallery8 {
+  border-bottom: 4px solid #3d382b;
+  overflow: hidden;
+}
+
+#gallery2 {
+  border-left: 4px solid #3d382b;
+}
+
+#gallery3 {
+  border-left: 4px solid #3d382b;
+}
+
+#gallery4 {
+  border-left: 4px solid #3d382b;
+  border-right: 4px solid #3d382b;
+}
+
+#gallery6 {
+  border-left: 4px solid #3d382b;
+}
+
+#gallery7 {
+  border-left: 4px solid #3d382b;
+}
+
+#gallery8 {
+  border-left: 4px solid #3d382b;
+  border-right: 4px solid #3d382b;
+}
+
+#gallery1 > img:hover,
+#gallery2 > img:hover,
+#gallery3 > img:hover,
+#gallery4 > img:hover,
+#gallery5 > img:hover,
+#gallery6 > img:hover,
+#gallery7 > img:hover,
+#gallery8 > img:hover {
+  transform: scale(1.08);
+  z-index: 0;
+  transition: all 500ms ease;
 }
 
 /*
