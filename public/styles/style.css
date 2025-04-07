@@ -257,8 +257,17 @@ header .div-player {
 |               SECTION 7                    |
 |--------------------------------------------|
 */
-.section7-img > img {
-  width: 30vw;
+.section7-img > div > img {
+  width: 29vw;
+  position: relative;
+  width: 29vw;
+}
+
+.chefs {
+  position: absolute;
+  width: 29vw;
+  height: -50rem;
+  top: 50vh;
 }
 
 /*
