@@ -68,6 +68,15 @@ header .div-player {
 |               SECTION 3                    |
 |--------------------------------------------|
 */
+.menu-selection > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+.img-menu {
+  border: 0.4vw solid #484642;
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 4                    |
