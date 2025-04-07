@@ -10,11 +10,14 @@
     ></script>
     <title>CBIENBON</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
     <!-- SECTION HEADER & NAVBAR -->
     <section class="d-flex flex-column">
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg bg-black bg-opacity-50 fixed-top p-2">
+      <nav
+        class="navbar navbar-expand-lg bg-black bg-opacity-50 fixed-top p-2"
+        id="navbar"
+      >
         <div class="container-fluid">
           <a class="navbar-brand text-white fs-1" href="#">CBIENBON</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +26,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#scrollspyHeading1"
+                  href="#header"
                   >Home</a
                 >
               </li>
@@ -31,7 +34,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section1"
                   >About</a
                 >
               </li>
@@ -39,7 +42,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section3"
                   >Menu</a
                 >
               </li>
@@ -47,7 +50,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section4"
                   >Events</a
                 >
               </li>
@@ -55,7 +58,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section6"
                   >Gallery</a
                 >
               </li>
@@ -63,7 +66,7 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section7"
                   >Chefs</a
                 >
               </li>
@@ -71,22 +74,24 @@
                 <a
                   class="nav-link active text-white fs-5"
                   aria-current="page"
-                  href="#"
+                  href="#section8"
                   >Contact</a
                 >
               </li>
             </ul>
           </div>
-          <button
-            class="btn btn-outline-primary fs-4 text-white rounded-pill border-2 ps-4 pe-4 pt-2 pb-2"
-            type="submit"
-          >
-            BOOK A TABLE
-          </button>
+          <a href="#section5"
+            ><button
+              class="btn btn-outline-primary fs-4 text-white rounded-pill border-2 ps-4 pe-4 pt-2 pb-2"
+              type="submit"
+            >
+              BOOK A TABLE
+            </button>
+          </a>
         </div>
       </nav>
       <!-- HEADER -->
-      <header class="d-flex justify-content-center align-items-center">
+      <header class="d-flex justify-content-center align-items-center" id="header">
         <div class="d-flex m-5 p-5" style="gap: 20vw">
           <div class="d-flex flex-column">
             <div>
@@ -126,8 +131,13 @@
     </section>
     <!-- CONTENT -->
     <!-- SECTION 1 -->
-    <section class="section1 text-white d-flex">
-      <div class="d-flex flex-column justify-content-start w-50 p-5 m-5">
+    <section
+      class="section1 text-white d-flex"
+    >
+      <div
+        class="d-flex flex-column justify-content-start w-50 p-5 m-5"
+        id="section1"
+      >
         <h2 class="fw-bold fs-1">
           Voluptatem dignissimos provident quasi corporis voluptates sit
           assumenda.
@@ -194,8 +204,9 @@
     <!-- SECTION 2 -->
     <section
       class="section2 text-white bg-dark d-flex flex-column align-items-start pb-5"
+      data-bs-spy="scroll"
     >
-      <div>
+      <div id="section2">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">WHY US</p>
         <h2 class="text-primary fw-bold display-4 ms-5">
           Why Choose Our Restaurant
@@ -238,8 +249,11 @@
       </div>
     </section>
     <!-- SECTION 3 -->
-    <section class="section3 d-flex flex-column bg-secondary text-white">
-      <div>
+    <section
+      class="section3 d-flex flex-column bg-secondary text-white"
+      data-bs-spy="scroll"
+    >
+      <div id="section3">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">MENU</p>
         <h2 class="text-primary fw-bold display-4 ms-5">
           Check Our Tasty Menu
@@ -410,8 +424,11 @@
       </div>
     </section>
     <!-- SECTION 4 -->
-    <section class="section4 d-flex flex-column text-white">
-      <div>
+    <section
+      class="section4 d-flex flex-column text-white"
+      data-bs-spy="scroll"
+    >
+      <div id="section4">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4 events">EVENTS</p>
         <h2 class="text-primary fw-bold display-4 ms-5">
           Organize your Events in our Restaurant
@@ -557,8 +574,11 @@
       </div>
     </section>
     <!-- SECTION 5 -->
-    <section class="section5 bg-secondary d-flex flex-column p-5">
-      <div class="mb-5">
+    <section
+      class="section5 bg-secondary d-flex flex-column p-5"
+      data-bs-spy="scroll"
+    >
+      <div class="mb-5" id="section5">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">RESERVATION</p>
         <h2 class="text-primary fw-bold display-4 ms-5">Book a Table</h2>
       </div>
@@ -635,8 +655,11 @@
       </div>
     </section>
     <!-- SECTION 6 -->
-    <section class="section6 bg-secondary d-flex flex-column p-5">
-      <div>
+    <section
+      class="section6 bg-secondary d-flex flex-column p-5"
+      data-bs-spy="scroll"
+    >
+      <div id="section6">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">GALLERY</p>
         <h2 class="text-primary fw-bold display-4 ms-5">
           Some Photos from Our Restaurant
@@ -676,8 +699,11 @@
       </div>
     </section>
     <!-- SECTION 7 -->
-    <section class="section7 bg-secondary d-flex flex-column p-5">
-      <div>
+    <section
+      class="section7 bg-secondary d-flex flex-column p-5"
+      data-bs-spy="scroll"
+    >
+      <div id="section7">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">CHEFS</p>
         <h2 class="text-primary fw-bold display-4 ms-5">
           Our Professional Chefs
@@ -694,8 +720,11 @@
       </div>
     </section>
     <!-- SECTION 8 -->
-    <section class="bg-dark text-white p-0 d-flex flex-column">
-      <div>
+    <section
+      class="bg-dark text-white p-0 d-flex flex-column"
+      data-bs-spy="scroll"
+    >
+      <div id="section8">
         <p class="text-white-50 ms-5 fw-bold mt-5 fs-4">CONTACT</p>
         <h2 class="text-primary fw-bold display-4 ms-5">Contact Us</h2>
       </div>
@@ -809,8 +838,11 @@
       </div>
     </section>
     <!-- FOOTER -->
-    <div class="bg-dark text-white border-2 border-top border-secondary">
-      <footer class="container-fluid p-5">
+    <div
+      class="bg-dark text-white border-2 border-top border-secondary"
+      data-bs-spy="scroll"
+    >
+      <footer class="container-fluid p-5" id="footer">
         <div class="row">
           <div class="col-6 col-md-2">
             <h5 class="fs-2">CBIENBON</h5>
