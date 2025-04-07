@@ -129,6 +129,11 @@ header .div-player {
 |               SECTION 8                    |
 |--------------------------------------------|
 */
+.btn-subscribe {
+  position: absolute;
+  right: 13vw;
+}
+
 /*
 |--------------------------------------------|
 |                  FOOTER                    |
