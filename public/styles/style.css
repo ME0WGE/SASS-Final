@@ -5,6 +5,7 @@
 |--------------------------------------------|
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /*
             COLOR PALETTE
 |-----------------------------------|
@@ -56,6 +57,9 @@ header {
 header .div-player {
   border: 1vw solid rgba(204, 163, 92, 0.4666666667);
   border-radius: 50%;
+}
+header .header-h2 {
+  font-family: Playfair Display;
 }
 
 /*
