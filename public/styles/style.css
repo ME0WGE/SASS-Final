@@ -99,6 +99,44 @@ header .header-content {
   width: 10vw;
 }
 
+.section1-div-img {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.section1-div-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section1-div-img::before {
+  content: "";
+  position: absolute;
+  top: 8vh;
+  left: 6.5vw;
+  border-top: 7px solid #cca35c;
+  border-left: 7px solid #cca35c;
+  z-index: 1;
+}
+
+.section1-div-img::after {
+  content: "";
+  position: absolute;
+  bottom: 35.5vh;
+  right: 6.5vw;
+  border-bottom: 7px solid #cca35c;
+  border-right: 7px solid #cca35c;
+  z-index: 1;
+}
+
+.section1-div-img::before,
+.section1-div-img::after {
+  width: 5vw;
+  height: 5vw;
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 2                    |
