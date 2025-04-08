@@ -90,7 +90,7 @@ header .header-content {
 |--------------------------------------------|
 */
 .cards {
-  padding: 3vw;
+  padding: 5vw;
   padding-bottom: 2vw;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -102,6 +102,10 @@ header .header-content {
 .cards:hover .card-nb {
   color: white !important;
 }
+.section-title {
+  font-family: Playfair Display;
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 3                    |
