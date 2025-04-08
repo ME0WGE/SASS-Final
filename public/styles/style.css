@@ -116,8 +116,8 @@ header .header-content {
   position: absolute;
   top: 8vh;
   left: 6.5vw;
-  border-top: 7px solid #cca35c;
-  border-left: 7px solid #cca35c;
+  border-top: 5px solid #cca35c;
+  border-left: 5px solid #cca35c;
   z-index: 1;
 }
 
@@ -126,8 +126,8 @@ header .header-content {
   position: absolute;
   bottom: 35.5vh;
   right: 6.5vw;
-  border-bottom: 7px solid #cca35c;
-  border-right: 7px solid #cca35c;
+  border-bottom: 5px solid #cca35c;
+  border-right: 5px solid #cca35c;
   z-index: 1;
 }
 
@@ -135,6 +135,20 @@ header .header-content {
 .section1-div-img::after {
   width: 5vw;
   height: 5vw;
+}
+
+.section1-div-img:hover::after {
+  bottom: 34vh;
+  right: 5.5vw;
+}
+
+.section1-div-img:hover::before {
+  top: 6.5vh;
+  left: 5.5vw;
+}
+
+.section1-div-img::before, .section1-div-img::after {
+  transition: all ease 1s;
 }
 
 /*
