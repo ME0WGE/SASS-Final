@@ -445,8 +445,8 @@ header {
 }
 // CAROUSEL INDICATORS
 .carousel-indicators {
-  position: absolute;
-  bottom: 1rem;
+  position: relative;
+  top: 65vh;
   left: 0;
   right: 0;
   display: flex;
@@ -454,6 +454,7 @@ header {
   margin: 0;
   padding: 0;
   z-index: 2;
+  gap: 0.25vw !important;
 }
 
 .carousel-indicators button {
@@ -470,6 +471,12 @@ header {
   background-color: $text-color;
   opacity: 1;
 }
+.carousel-item div img {
+  width: 45vw !important;
+  padding-bottom: 1vw;
+  height: 60vh !important;
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 5                    |
