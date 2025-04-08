@@ -336,8 +336,10 @@ header .header-content {
 |                  FOOTER                    |
 |--------------------------------------------|
 */
-input[class="form-control border-0 rounded-pill"] {
-  background-color: #26241e;
+.footer-useful,
+.footer-services,
+.footer-newsletter {
+  font-family: Playfair Display;
 }
 
 /*!
