@@ -190,9 +190,10 @@ header {
   background-size: cover;
   height: 100vh;
 }
-// u {
-//   text-decoration-color: $text-color;
-// }
+.carousel-image {
+  width: 40vw !important;
+  height: 50vh !important;
+}
 .price1::before {
   content: "______";
   position: absolute;
