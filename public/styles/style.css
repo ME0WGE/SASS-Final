@@ -53,17 +53,6 @@ header {
   background-size: cover;
   height: 100vh;
 }
-header .div-player {
-  border: 1vw solid rgba(204, 163, 92, 0.4666666667);
-  border-radius: 50%;
-}
-header .header-h2 {
-  font-family: Playfair Display;
-  font-size: 2vw;
-}
-header .header-content {
-  margin-top: 20vh !important;
-}
 
 /*
 |--------------------------------------------|
