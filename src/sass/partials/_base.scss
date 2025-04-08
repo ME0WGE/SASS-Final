@@ -110,8 +110,8 @@ header {
 .section1-div-img::before {
   content: "";
   position: absolute;
-  top: 7.5vh;
-  left: 6vw;
+  top: 7vh;
+  left: 1vw;
   border-top: 5px solid $text-color;
   border-left: 5px solid $text-color;
   z-index: 1;
@@ -120,27 +120,27 @@ header {
 .section1-div-img::after {
   content: "";
   position: absolute;
-  bottom: 35vh;
-  right: 6vw;
+  bottom: -4.5vh;
+  right: 1vw;
   border-bottom: 5px solid $text-color;
   border-right: 5px solid $text-color;
   z-index: 1;
 }
 .section1-div-img::before,
 .section1-div-img::after {
-  width: 3vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 3.5vw;
 }
 
 // TRANSITION ON HOVER -- BOTTOM-RIGHT
 .section1-div-img:hover::after {
-  bottom: 34vh;
-  right: 5.5vw;
+  bottom: -5.5vh;
+  right: 0.5vw;
 }
 // TRANSITION ON HOVER -- TOP-LEFT
 .section1-div-img:hover::before {
-  top: 6.5vh;
-  left: 5.5vw;
+  top: 6vh;
+  left: 0.5vw;
 }
 // TRANSITION IMG SIZE++
 .section1-div-img:hover {
@@ -167,8 +167,6 @@ header {
   background-image: linear-gradient($card-hover);
   .card-nb {
     color: white !important;
-  }
-  .card-titre {
   }
 }
 .section-title {
@@ -294,8 +292,6 @@ header {
   border-bottom: 4px solid #3d382b;
   overflow: hidden;
 }
-#gallery1 {
-}
 #gallery2 {
   border-left: 4px solid #3d382b;
 }
@@ -305,8 +301,6 @@ header {
 #gallery4 {
   border-left: 4px solid #3d382b;
   border-right: 4px solid #3d382b;
-}
-#gallery5 {
 }
 #gallery6 {
   border-left: 4px solid #3d382b;

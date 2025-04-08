@@ -117,8 +117,8 @@ header .header-content {
 .section1-div-img::before {
   content: "";
   position: absolute;
-  top: 7.5vh;
-  left: 6vw;
+  top: 7vh;
+  left: 1vw;
   border-top: 5px solid #cca35c;
   border-left: 5px solid #cca35c;
   z-index: 1;
@@ -127,8 +127,8 @@ header .header-content {
 .section1-div-img::after {
   content: "";
   position: absolute;
-  bottom: 35vh;
-  right: 6vw;
+  bottom: -4.5vh;
+  right: 1vw;
   border-bottom: 5px solid #cca35c;
   border-right: 5px solid #cca35c;
   z-index: 1;
@@ -136,18 +136,18 @@ header .header-content {
 
 .section1-div-img::before,
 .section1-div-img::after {
-  width: 3vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 3.5vw;
 }
 
 .section1-div-img:hover::after {
-  bottom: 34vh;
-  right: 5.5vw;
+  bottom: -5.5vh;
+  right: 0.5vw;
 }
 
 .section1-div-img:hover::before {
-  top: 6.5vh;
-  left: 5.5vw;
+  top: 6vh;
+  left: 0.5vw;
 }
 
 .section1-div-img:hover {
@@ -178,6 +178,7 @@ header .header-content {
 .cards:hover .card-nb {
   color: white !important;
 }
+
 .section-title {
   font-family: Playfair Display;
 }
