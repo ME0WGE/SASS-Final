@@ -40,7 +40,6 @@ header {
     url(../assets/img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1;
   background-size: cover;
   height: 100vh;
 
@@ -72,7 +71,6 @@ header {
   height: 85vh;
 
   .section1-div-img {
-    
     height: 75% !important;
   }
   img[src="./public/assets/img/about.jpg"] {
