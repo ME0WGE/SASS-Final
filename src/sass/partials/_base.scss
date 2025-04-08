@@ -69,10 +69,14 @@ header {
   z-index: -1;
   background-size: cover;
   background-position-y: 75%;
-  height: 100vh;
+  height: 85vh;
 
+  .section1-div-img {
+    
+    height: 75% !important;
+  }
   img[src="./public/assets/img/about.jpg"] {
-    width: 35vw;
+    width: 45vw;
   }
 }
 // title::after line
@@ -106,8 +110,8 @@ header {
 .section1-div-img::before {
   content: "";
   position: absolute;
-  top: 8vh;
-  left: 6.5vw;
+  top: 7.5vh;
+  left: 6vw;
   border-top: 5px solid $text-color;
   border-left: 5px solid $text-color;
   z-index: 1;
@@ -116,16 +120,16 @@ header {
 .section1-div-img::after {
   content: "";
   position: absolute;
-  bottom: 35.5vh;
-  right: 6.5vw;
+  bottom: 35vh;
+  right: 6vw;
   border-bottom: 5px solid $text-color;
   border-right: 5px solid $text-color;
   z-index: 1;
 }
 .section1-div-img::before,
 .section1-div-img::after {
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 // TRANSITION ON HOVER -- BOTTOM-RIGHT
@@ -138,8 +142,14 @@ header {
   top: 6.5vh;
   left: 5.5vw;
 }
-.section1-div-img::before, .section1-div-img::after {
-  transition: all ease 1s;
+// TRANSITION IMG SIZE++
+.section1-div-img:hover {
+  transform: scale(1.02);
+  transition: ease 500ms;
+}
+.section1-div-img::before,
+.section1-div-img::after {
+  transition: ease 500ms;
 }
 
 /*
