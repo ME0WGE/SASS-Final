@@ -72,12 +72,83 @@ header {
   height: 85vh;
 
   .section1-div-img {
-    
     height: 75% !important;
   }
   img[src="./public/assets/img/about.jpg"] {
     width: 45vw;
   }
+}
+// title::after line
+.section2-whyus::after,
+.section3-title-menu::after,
+.section4-title-events::after,
+.section5-title-reservation::after,
+.section6-title-gallery::after,
+.section7-title-chefs::after,
+.section8-title-contact::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $border-color;
+  opacity: 25%;
+  width: 10vw;
+}
+
+// CORNER BORDERS
+.section1-div-img {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+.section1-div-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// TOP-LEFT
+.section1-div-img::before {
+  content: "";
+  position: absolute;
+  top: 7vh;
+  left: 1vw;
+  border-top: 5px solid $text-color;
+  border-left: 5px solid $text-color;
+  z-index: 1;
+}
+// BOTTOM-RIGHT
+.section1-div-img::after {
+  content: "";
+  position: absolute;
+  bottom: -4.5vh;
+  right: 1vw;
+  border-bottom: 5px solid $text-color;
+  border-right: 5px solid $text-color;
+  z-index: 1;
+}
+.section1-div-img::before,
+.section1-div-img::after {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+// TRANSITION ON HOVER -- BOTTOM-RIGHT
+.section1-div-img:hover::after {
+  bottom: -5.5vh;
+  right: 0.5vw;
+}
+// TRANSITION ON HOVER -- TOP-LEFT
+.section1-div-img:hover::before {
+  top: 6vh;
+  left: 0.5vw;
+}
+// TRANSITION IMG SIZE++
+.section1-div-img:hover {
+  transform: scale(1.02);
+  transition: ease 500ms;
+}
+.section1-div-img::before,
+.section1-div-img::after {
+  transition: ease 500ms;
 }
 // title::after line
 .section2-whyus::after,
@@ -228,6 +299,98 @@ header {
   content: "..................................................................................................................................";
   padding: 1vw;
   width: 50vw;
+}
+// SECTION 3 RADIO
+
+#filter-all:checked ~ * .menu-item,
+#filter-starters:checked ~ * .starters-item,
+#filter-salads:checked ~ * .salads-item,
+#filter-specialty:checked ~ * .specialty-item {
+  display: flex;
+  opacity: 1;
+  height: auto;
+  max-height: 500px;
+  margin: 1rem !important;
+  transform: scale(1);
+  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease,
+    margin 0.4s ease;
+  pointer-events: auto;
+}
+
+#filter-starters:checked ~ * .menu-item:not(.starters-item),
+#filter-salads:checked ~ * .menu-item:not(.salads-item),
+#filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
+  display: none;
+  opacity: 0;
+  height: 0;
+  max-height: 0;
+  margin: 0;
+  transform: scale(0);
+  transition: opacity 0.2s ease, transform 0.2s ease, max-height 0.2s ease,
+    margin 0.2s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.filter-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.filter-label {
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.filter-label:hover {
+  color: var(--bs-primary);
+}
+
+.filter-input:checked + .filter-label {
+  color: var(--bs-primary);
+  font-weight: bold;
+}
+
+.filter-input:checked + .filter-label::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 0.125rem;
+  background-color: var(--bs-primary);
+}
+
+.cards-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-menu > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-menu > div {
+  display: flex;
+  flex-wrap: wrap !important;
+  width: 100%;
+}
+
+.menu-item {
+  flex: 1 0 auto;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+
+.menu {
+  width: 100% !important;
 }
 /*
 |--------------------------------------------|
