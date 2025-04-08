@@ -257,6 +257,93 @@ header {
   padding: 1vw;
   width: 50vw;
 }
+// SECTION 3 RADIO
+/* CSS-only menu filtering system */
+
+/* Step 1: Make a full page solution that doesn't rely on parent/child relationships */
+#filter-all:checked ~ * .menu-item,
+#filter-starters:checked ~ * .starters-item,
+#filter-salads:checked ~ * .salads-item,
+#filter-specialty:checked ~ * .specialty-item {
+  display: flex;
+  visibility: visible;
+  height: auto;
+  max-height: 500px; /* Set to a value larger than your items */
+  margin: 1rem !important;
+  transform: scale(1);
+  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease,
+    margin 0.4s ease;
+  pointer-events: auto;
+}
+
+/* Step 2: Hide items that don't match the selected filter */
+#filter-starters:checked ~ * .menu-item:not(.starters-item),
+#filter-salads:checked ~ * .menu-item:not(.salads-item),
+#filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
+  display: none;
+  visibility: collapse;
+  height: 0;
+  max-height: 0;
+  margin: 0 !important;
+  transform: scale(0);
+  transition: opacity 0.2s ease, transform 0.2s ease, max-height 0.2s ease,
+    margin 0.2s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Step 3: Style the filter buttons */
+.filter-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.filter-label {
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.filter-label:hover {
+  color: var(--bs-primary);
+}
+
+.filter-input:checked + .filter-label {
+  color: var(--bs-primary);
+  font-weight: bold;
+}
+
+.filter-input:checked + .filter-label::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 0.125rem;
+  background-color: var(--bs-primary);
+}
+
+/* Step 4: Fix layout issues */
+.cards-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-menu > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .cards-menu > div {
+    flex-direction: column;
+  }
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 4                    |

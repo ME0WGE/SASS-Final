@@ -118,7 +118,7 @@
               </a>
             </div>
           </div>
-           <!-- IFRAME -->
+          <!-- IFRAME -->
           <div id="video-overlay" class="overlay">
             <div class="overlay-content">
               <a href="#" class="close-btn">&times;</a>
@@ -140,9 +140,7 @@
             <div class="div-player">
               <div class="div2-player">
                 <a href="#video-overlay">
-                  <i
-                    class="fa-solid fa-play text-white p-5 fs-1"
-                  ></i>
+                  <i class="fa-solid fa-play text-white p-5 fs-1"></i>
                 </a>
               </div>
             </div>
@@ -280,6 +278,31 @@
       </div>
     </section>
     <!-- SECTION 3 -->
+    <input
+      type="radio"
+      name="menu-filter"
+      id="filter-all"
+      class="filter-input"
+      checked
+    />
+    <input
+      type="radio"
+      name="menu-filter"
+      id="filter-starters"
+      class="filter-input"
+    />
+    <input
+      type="radio"
+      name="menu-filter"
+      id="filter-salads"
+      class="filter-input"
+    />
+    <input
+      type="radio"
+      name="menu-filter"
+      id="filter-specialty"
+      class="filter-input"
+    />
     <section
       class="section3 d-flex flex-column bg-secondary text-white"
       id="section3-spy"
@@ -300,196 +323,205 @@
           Check Our Tasty Menu
         </h2>
       </div>
-      <div
-        class="d-flex justify-content-center align-items-center menu-selection gap-5 m-3 p-3 fs-5"
-      >
-        <p><a href="#all">All</a></p>
-        <p><a href="#starters">Starters</a></p>
-        <p><a href="#salads">Salads</a></p>
-        <p><a href="#specialty">Speciality</a></p>
-      </div>
-      <!-- MENU -->
-      <div
-        class="menu d-flex flex-column justify-content-center p-5 pt-0 cards-menu"
-      >
-        <!-- ROW 1 -->
-        <div class="d-flex">
-          <!-- CARD 1 -->
-          <div class="d-flex m-4" id="starters">
-            <img
-              src="./public/assets/img/menu/lobster-bisque.jpg"
-              alt="Lobster Bisque"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title1">Lobster Bisque</p>
-                <p class="fw-bold text-primary">$5.95</p>
-              </div>
-              <p class="text-white-50 ps-3">
-                Lorem, deren, trataro, filede, nerada
-              </p>
-            </div>
-          </div>
-          <!-- CARD 2 -->
-          <div class="d-flex m-4" id="specialty">
-            <img
-              src="./public/assets/img/menu/bread-barrel.jpg"
-              alt="Bread Barrel"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title6">Bread Barrel</p>
-                <p class="fw-bold text-primary">$6.95</p>
-              </div>
-              <p class="text-white-50 ps-3">
-                Lorem, deren, trataro, filede, nerada
-              </p>
-            </div>
-          </div>
+
+      <!-- Menu filter container - Wrap everything in this container -->
+      <div class="menu-filter-container">
+        <div
+          class="d-flex justify-content-center align-items-center menu-selection gap-5 m-3 p-3 fs-5"
+        >
+          <label for="filter-all" class="filter-label">All</label>
+          <label for="filter-starters" class="filter-label">Starters</label>
+          <label for="filter-salads" class="filter-label">Salads</label>
+          <label for="filter-specialty" class="filter-label">Specialty</label>
         </div>
-        <!-- ROW 2 -->
-        <div class="d-flex">
-          <!-- CARD 1 -->
-          <div class="d-flex m-4" id="starters">
-            <img
-              src="./public/assets/img/menu/cake.jpg"
-              alt="Crab Cake"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title2">Crab Cake</p>
-                <p class="fw-bold text-primary">$7.95</p>
+
+        <!-- MENU -->
+        <div
+          class="menu d-flex flex-column justify-content-center p-5 pt-0 cards-menu"
+        >
+          <!-- ROW 1 -->
+          <div class="d-flex">
+            <!-- CARD 1 - Added menu-item and starters-item classes -->
+            <div class="d-flex m-4 menu-item starters-item">
+              <img
+                src="./public/assets/img/menu/lobster-bisque.jpg"
+                alt="Lobster Bisque"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title1">Lobster Bisque</p>
+                  <p class="fw-bold text-primary">$5.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
               </div>
-              <p class="text-white-50 w-75 ps-3">
-                A delciate crab cake served on a toasted roll with lettuce and
-                tartar sauce
-              </p>
+            </div>
+            <!-- CARD 2 - Added menu-item and specialty-item classes -->
+            <div class="d-flex m-4 menu-item specialty-item">
+              <img
+                src="./public/assets/img/menu/bread-barrel.jpg"
+                alt="Bread Barrel"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title6">Bread Barrel</p>
+                  <p class="fw-bold text-primary">$6.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+              </div>
             </div>
           </div>
-          <!-- CARD 2 -->
-          <div class="d-flex m-4 salads" id="salads">
-            <img
-              src="./public/assets/img/menu/caesar.jpg"
-              alt="Caesar Selections"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title7">Caesar Selections</p>
-                <p class="fw-bold text-primary">$8.95</p>
+
+          <!-- ROW 2 -->
+          <div class="d-flex">
+            <!-- CARD 1 - Added menu-item and starters-item classes -->
+            <div class="d-flex m-4 menu-item starters-item">
+              <img
+                src="./public/assets/img/menu/cake.jpg"
+                alt="Crab Cake"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title2">Crab Cake</p>
+                  <p class="fw-bold text-primary">$7.95</p>
+                </div>
+                <p class="text-white-50 w-75 ps-3">
+                  A delciate crab cake served on a toasted roll with lettuce and
+                  tartar sauce
+                </p>
               </div>
-              <p class="text-white-50 ps-3">
-                Lorem, deren, trataron filede, nerada
-              </p>
+            </div>
+            <!-- CARD 2 - Added menu-item and salads-item classes -->
+            <div class="d-flex m-4 menu-item salads-item">
+              <img
+                src="./public/assets/img/menu/caesar.jpg"
+                alt="Caesar Selections"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title7">Caesar Selections</p>
+                  <p class="fw-bold text-primary">$8.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Lorem, deren, trataron filede, nerada
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- ROW 3 -->
-        <div class="d-flex">
-          <!-- CARD 1 -->
-          <div class="d-flex m-4" id="specialty">
-            <img
-              src="./public/assets/img/menu/tuscan-grilled.jpg"
-              alt="Tuscan Grilled"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title3">Tuscan Grilled</p>
-                <p class="fw-bold text-primary">$9.95</p>
+
+          <!-- ROW 3 -->
+          <div class="d-flex">
+            <!-- CARD 1 - Added menu-item and specialty-item classes -->
+            <div class="d-flex m-4 menu-item specialty-item">
+              <img
+                src="./public/assets/img/menu/tuscan-grilled.jpg"
+                alt="Tuscan Grilled"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title3">Tuscan Grilled</p>
+                  <p class="fw-bold text-primary">$9.95</p>
+                </div>
+                <p class="text-white-50 w-75 ps-3">
+                  Grilled chicken with provolone, artichoke hearts, and roasted
+                  red pesto
+                </p>
               </div>
-              <p class="text-white-50 w-75 ps-3">
-                Grilled chicken with provolone, artichoke hearts, and roasted
-                red pesto
-              </p>
+            </div>
+            <!-- CARD 2 - Added menu-item and starters-item classes -->
+            <div class="d-flex m-4 menu-item starters-item">
+              <img
+                src="./public/assets/img/menu/mozzarella.jpg"
+                alt="Mozarella Stick"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title8">Mozarella Stick</p>
+                  <p class="fw-bold text-primary">$5.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+              </div>
             </div>
           </div>
-          <!-- CARD 2 -->
-          <div class="d-flex m-4" id="starters">
-            <img
-              src="./public/assets/img/menu/mozzarella.jpg"
-              alt="Mozarella Stick"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title8">Mozarella Stick</p>
-                <p class="fw-bold text-primary">$5.95</p>
+
+          <!-- ROW 4 -->
+          <div class="d-flex">
+            <!-- CARD 1 - Added menu-item and salads-item classes -->
+            <div class="d-flex m-4 menu-item salads-item">
+              <img
+                src="./public/assets/img/menu/greek-salad.jpg"
+                alt="Greek Salad"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title4">Greek Salad</p>
+                  <p class="fw-bold text-primary">$9.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                </p>
               </div>
-              <p class="text-white-50 ps-3">
-                Lorem, deren, trataro, filede, nerada
-              </p>
+            </div>
+            <!-- CARD 2 - Added menu-item and salads-item classes -->
+            <div class="d-flex m-4 menu-item salads-item">
+              <img
+                src="./public/assets/img/menu/spinach-salad.jpg"
+                alt="Spinach Salad"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title9">Spinach Salad</p>
+                  <p class="fw-bold text-primary">$9.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Fresh spinach with mushrooms, hard boiled egg, and warm bacon
+                  vinaigrette
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- ROW 4 -->
-        <div class="d-flex">
-          <!-- CARD 1 -->
-          <div class="d-flex m-4 salads" id="salads">
-            <img
-              src="./public/assets/img/menu/greek-salad.jpg"
-              alt="Greek Salad"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title4">Greek Salad</p>
-                <p class="fw-bold text-primary">$9.95</p>
+
+          <!-- ROW 5 -->
+          <div class="d-flex">
+            <!-- CARD 1 - Added menu-item and specialty-item classes -->
+            <div class="d-flex m-4 menu-item specialty-item">
+              <img
+                src="./public/assets/img/menu/lobster-roll.jpg"
+                alt="Lobster Roll"
+                style="width: 5vw"
+                class="rounded-circle img-menu"
+              />
+              <div>
+                <div class="d-flex ps-3">
+                  <p class="food-title5">Lobster Roll</p>
+                  <p class="fw-bold text-primary">$12.95</p>
+                </div>
+                <p class="text-white-50 ps-3">
+                  Plump lobster meat, mayo and crisp lettuce on a toasted bulk
+                  roll
+                </p>
               </div>
-              <p class="text-white-50 ps-3">
-                Fresh spinach, crisp romaine, tomatoes, and Greek olives
-              </p>
-            </div>
-          </div>
-          <!-- CARD 2 -->
-          <div class="d-flex m-4" id="salads">
-            <img
-              src="./public/assets/img/menu/spinach-salad.jpg"
-              alt="Spinach Salad"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title9">Spinach Salad</p>
-                <p class="fw-bold text-primary">$9.95</p>
-              </div>
-              <p class="text-white-50 ps-3">
-                Fresh spinach with mushrooms, hard boiled egg, and warm bacon
-                vinaigrette
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- ROW 5 -->
-        <div class="d-flex">
-          <!-- CARD 1 -->
-          <div class="d-flex m-4" id="specialty">
-            <img
-              src="./public/assets/img/menu/lobster-roll.jpg"
-              alt="Lobster Roll"
-              style="width: 5vw"
-              class="rounded-circle img-menu"
-            />
-            <div>
-              <div class="d-flex ps-3">
-                <p class="food-title5">Lobster Roll</p>
-                <p class="fw-bold text-primary">$12.95</p>
-              </div>
-              <p class="text-white-50 ps-3">
-                Plump lobster meat, mayo and crisp lettuce on a toasted bulk
-                roll
-              </p>
             </div>
           </div>
         </div>
