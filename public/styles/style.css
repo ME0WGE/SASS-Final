@@ -84,6 +84,21 @@ header .header-content {
   width: 35vw;
 }
 
+.section2-whyus::after,
+.section3-title-menu::after,
+.section4-title-events::after,
+.section5-title-reservation::after,
+.section6-title-gallery::after,
+.section7-title-chefs::after,
+.section8-title-contact::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #958D7B;
+  opacity: 25%;
+  width: 10vw;
+}
+
 /*
 |--------------------------------------------|
 |               SECTION 2                    |
