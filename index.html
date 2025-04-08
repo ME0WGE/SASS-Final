@@ -19,7 +19,7 @@
         style="height: 13vh !important"
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white fs-1 m-0 m-1" href="#top"
+          <a class="navbar-brand text-white fs-1 m-0 m-1 ms-5" href="#top"
             >CBIENBON</a
           >
           <!-- BURGIR -->
@@ -73,12 +73,12 @@
               </li>
             </ul>
           </div>
-          <!-- BUTTON -->
-          <button
-            class="btn btn-outline-primary rounded-pill border-3 text-white m-1 ps-5 pe-5 pt-3 pb-3 fw-bold fs-5"
+          <a
+            href="#section5-spy"
+            class="btn btn-outline-primary rounded-pill border-3 text-white m-1 ps-5 me-5 pe-5 pt-3 pb-3 fw-bold fs-5"
           >
             BOOK A TABLE
-          </button>
+          </a>
         </div>
       </nav>
       <!-- HEADER -->
@@ -103,25 +103,45 @@
               </h2>
             </div>
             <div class="mt-3">
-              <button
+              <a
+                href="#section3-spy"
                 class="btn btn-outline-primary rounded-pill border-3 text-white m-3 ps-5 pe-5 pt-3 pb-3 fw-bold fs-4"
               >
                 OUR MENU
-              </button>
+              </a>
 
-              <button
+              <a
+                href="#section5-spy"
                 class="btn btn-outline-primary rounded-pill border-3 text-white m-3 ps-5 pe-5 pt-3 pb-3 fw-bold fs-4"
               >
                 BOOK A TABLE
-              </button>
+              </a>
             </div>
           </div>
+          <!-- IFRAME -->
+          <div id="video-overlay" class="overlay">
+            <div class="overlay-content">
+              <a href="#" class="close-btn">&times;</a>
+              <div class="video-container">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- PLAYER BUTTON -->
           <div class="align-self-end">
             <div class="div-player">
-              <div>
-                <i
-                  class="fa-solid fa-play text-white bg-primary p-5 border-5 border-warning rounded-circle fs-1"
-                ></i>
+              <div class="div2-player">
+                <a href="#video-overlay">
+                  <i class="fa-solid fa-play text-white p-5 fs-1"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -221,7 +241,7 @@
     >
       <div id="section2">
         <p
-          class="text-white-50 ms-5 fw-bold mt-5 fs-4 section2-whyus d-flex align-items-center gap-3"
+          class="text-white-50 ms-5 fw-bold mt-5 pt-5 fs-4 section2-whyus d-flex align-items-center gap-3"
         >
           WHY US
         </p>

@@ -40,22 +40,51 @@ header {
     url(../assets/img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1;
   background-size: cover;
   height: 100vh;
-
-  .div-player {
-    border: 1vw solid $text-color-50;
-    border-radius: 50%;
-  }
-  .header-h2 {
-    font-family: Playfair Display;
-    font-size: 2vw;
-  }
-  .header-content {
-    margin-top: 20vh !important;
-  }
 }
+// .div-player {
+//   border: 1vw solid $text-color-50;
+//   border-radius: 50%;
+//   overflow: hidden !important;
+// }
+// .div2-player {
+//   border: 0.25vw solid red;
+//   border-radius: 50%;
+//   overflow: hidden !important;
+// }
+// .div-player:hover > .div2-player {
+//   border: 0.25vw solid blue;
+//   transform: scale(1.1);
+//   z-index: 0 !important;
+// }
+// .header-h2 {
+//   font-family: Playfair Display;
+//   font-size: 2vw;
+// }
+// .header-content {
+//   margin-top: 20vh !important;
+// }
+// @keyframes play-btn-scale {
+//   0% {
+//     transform: scale(1);
+//     z-index: 0;
+//   }
+//   50% {
+//     transform: scale(5);
+//     z-index: 0;
+//   }
+//   100% {
+//     transform: scale(20);
+//     z-index: 0;
+//   }
+// }
+// a[href="#player"] {
+//   // overflow: hidden !important;
+// }
+// a[href="#player"] > i:active {
+//   animation: play-btn-scale 500ms linear;
+// }
 /*
 |--------------------------------------------|
 |               SECTION 1                    |
@@ -236,6 +265,7 @@ header {
 }
 .cards:hover {
   background-image: linear-gradient($card-hover);
+  transform: scale(1.03);
   .card-nb {
     color: white !important;
   }
@@ -388,10 +418,21 @@ header {
   max-width: 50%;
 }
 
+<<<<<<< HEAD
+=======
+.d-flex {
+  width: auto !important;
+  height: auto !important;
+}
+>>>>>>> main
 
 .menu {
   width: 100% !important;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 /*
 |--------------------------------------------|
 |               SECTION 4                    |

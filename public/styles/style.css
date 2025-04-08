@@ -50,20 +50,8 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1;
   background-size: cover;
   height: 100vh;
-}
-header .div-player {
-  border: 1vw solid rgba(204, 163, 92, 0.4666666667);
-  border-radius: 50%;
-}
-header .header-h2 {
-  font-family: Playfair Display;
-  font-size: 2vw;
-}
-header .header-content {
-  margin-top: 20vh !important;
 }
 
 /*
@@ -247,6 +235,7 @@ header .header-content {
 
 .cards:hover {
   background-image: linear-gradient(#c49851);
+  transform: scale(1.03);
 }
 .cards:hover .card-nb {
   color: white !important;
@@ -409,6 +398,14 @@ header .header-content {
   max-width: 50%;
 }
 
+<<<<<<< HEAD
+=======
+.d-flex {
+  width: auto !important;
+  height: auto !important;
+}
+
+>>>>>>> main
 .menu {
   width: 100% !important;
 }
