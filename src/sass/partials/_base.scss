@@ -403,11 +403,6 @@ header {
   max-width: 50%;
 }
 
-.d-flex {
-  width: auto !important;
-  height: auto !important;
-}
-
 .menu {
   width: 100% !important;
 }
@@ -447,6 +442,33 @@ header {
   position: absolute;
   margin-top: 0.3vw;
   color: $text-color;
+}
+// CAROUSEL INDICATORS
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.carousel-indicators button {
+  width: 1vw !important;
+  height: 1vw !important;
+  border-radius: 50%;
+  background-color: #777;
+  border: none;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.carousel-indicators button.active {
+  background-color: $text-color;
+  opacity: 1;
 }
 /*
 |--------------------------------------------|
