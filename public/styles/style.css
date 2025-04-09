@@ -33,14 +33,17 @@ body {
 // ======================     PHONE SIZE      ====================== \\
 // ===================================================================\\
 */
-@media (width < 575px) {
+@media (width > 575px) {
   /*
-  |--------------------------------------------|
-  |               NAV & HEADER                 |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             NAV & HEADER                              |
+  |                                                                       |
+  |=======================================================================|
   */
   nav {
     font-family: Montserrat;
+    height: 10vh !important;
   }
   header {
     font-family: Montserrat;
@@ -49,52 +52,18 @@ body {
     color: white !important;
     text-transform: uppercase;
   }
-  .btn-bookatable {
-    display: none !important;
-  }
   .nav-link.active {
     color: #cca35c !important;
-  }
-  .cbienbon {
-    margin: 0;
-    padding: 0;
   }
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 50%;
     height: 100vh;
   }
-  .header-titre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20vw !important;
-  }
-  .header-titre-container {
-    width: 95vw !important;
-    text-align: center;
-  }
-  .header-titre-container h2 {
-    font-size: 4vw !important;
-  }
-  .header-btn-container {
-    text-align: center;
-  }
-  .header-btn-container a {
-    font-size: 3vw !important;
-  }
-  .btn-player {
-    margin-right: 42vw !important;
-    margin-top: -15vw !important;
-  }
   .header-content {
-    display: flex;
-    flex-direction: column;
+    gap: 15vw;
   }
   .overlay {
     position: fixed;
@@ -171,7 +140,7 @@ body {
     transform: scale(1.05);
   }
   .play-button:active a i {
-    font-size: 50vw;
+    transform: scale(5);
   }
   @keyframes pulse {
     0% {
@@ -186,8 +155,8 @@ body {
   }
   .div-player {
     overflow: hidden !important;
-    width: 30vw;
-    height: 30vw;
+    width: 10vw;
+    height: 15vw;
   }
   .div2-player {
     overflow: hidden;
@@ -213,9 +182,11 @@ body {
     animation: play-btn-scale 500ms linear infinite;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 1                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 1                                 |
+  |                                                                       |
+  |=======================================================================|
   */
   .section1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75)), url(../assets/img/about-bg.jpg);
@@ -223,7 +194,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position-y: 75%;
     height: 85vh;
   }
   .section1 .section1-div-img {
@@ -244,18 +215,7 @@ body {
     height: 2px;
     background-color: #958D7B;
     opacity: 25%;
-    width: 30vw;
-  }
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    height: 140vh !important;
-  }
-  #section1 {
-    margin: 0 !important;
-  }
-  .section1-content-container {
-    width: 80vw !important;
+    width: 10vw;
   }
   .section1-div-img {
     position: relative;
@@ -263,35 +223,61 @@ body {
     overflow: visible;
   }
   .section1-div-img img {
-    margin-top: -145vh !important;
     display: block;
     max-width: 100%;
-    width: 80vw !important;
     height: auto;
   }
-  .section-title {
-    width: 80vw !important;
-    padding-top: 35vh !important;
+  .section1-div-img::before {
+    content: "";
+    position: absolute;
+    top: 7vh;
+    left: 1vw;
+    border-top: 5px solid #cca35c;
+    border-left: 5px solid #cca35c;
+    z-index: 1;
   }
-  .section-title2 {
-    width: 80vw !important;
+  .section1-div-img::after {
+    content: "";
+    position: absolute;
+    bottom: -4.5vh;
+    right: 1vw;
+    border-bottom: 5px solid #cca35c;
+    border-right: 5px solid #cca35c;
+    z-index: 1;
+  }
+  .section1-div-img::before,
+  .section1-div-img::after {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .section1-div-img:hover::after {
+    bottom: -5.5vh;
+    right: 0.5vw;
+  }
+  .section1-div-img:hover::before {
+    top: 6vh;
+    left: 0.5vw;
+  }
+  .section1-div-img:hover {
+    transform: scale(1.02);
+    transition: ease 500ms;
+  }
+  .section1-div-img::before,
+  .section1-div-img::after {
+    transition: ease 500ms;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 2                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 2                                 |
+  |                                                                       |
+  |=======================================================================|
   */
-  .cards-contain {
-    display: flex;
-    flex-direction: column;
-  }
   .cards {
     padding: 5vw;
     padding-bottom: 2vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    display: flex;
-    flex-direction: column;
   }
   .cards:hover {
     background-image: linear-gradient(#c49851);
@@ -302,77 +288,68 @@ body {
   }
   .section-title {
     font-family: Playfair Display;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 3                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 3                                 |
+  |                                                                       |
+  |=======================================================================|
   */
   .menu-selection > p > a {
     text-decoration: none;
     color: white;
   }
-  .menu-selection {
-    gap: 0vw !important;
-  }
-  .filter-label {
-    padding: 0 !important;
-  }
   .img-menu {
     border: 0.4vw solid #484642;
   }
-  .menu-item > img {
-    width: 20vw !important;
-  }
-  .menu-item {
-    margin: 0;
-    padding: 0;
-    margin-right: 15vw !important;
+  .starters-item > img,
+  .salads-item > img,
+  .specialty-item > img {
+    width: 5vw;
   }
   .food-title1::after {
-    content: "...........................................";
+    content: "................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title2::after {
-    content: "................................................";
+    content: ".........................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title3::after {
-    content: ".............................................";
+    content: "...................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title4::after {
-    content: "..........................................";
+    content: "........................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title5::after {
-    content: "..............................";
+    content: ".......................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title6::after {
-    content: "...................................";
+    content: "...................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title7::after {
-    content: "..............................................";
+    content: "...........................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title8::after {
-    content: "..............................................";
+    content: "................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
   .food-title9::after {
-    content: "............................................";
+    content: "..................................................................................................................................";
     padding: 1vw;
     width: 50vw;
   }
@@ -438,7 +415,7 @@ body {
   }
   .cards-menu > div {
     display: flex;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
   }
   .cards-menu > div {
     display: flex;
@@ -454,9 +431,11 @@ body {
     width: 100% !important;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 4                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 4                                 |
+  |                                                                       |
+  |=======================================================================|
   */
   .section4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75)), url(../assets/img/events-bg.jpg);
@@ -464,11 +443,17 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 140vh !important;
+    height: 100vh;
   }
   .carousel-image {
     width: 40vw !important;
     height: 50vh !important;
+  }
+  .carousel-div-titles {
+    width: 40vw;
+  }
+  .carousel-ul {
+    list-style: none;
   }
   .price1::before {
     content: "______";
@@ -514,58 +499,38 @@ body {
     opacity: 1;
   }
   .carousel-item div img {
-    width: 30vw !important;
+    width: 45vw !important;
     padding-bottom: 1vw;
-    height: 15vh !important;
-  }
-  .carousel-item > div {
-    display: flex;
-    flex-direction: column;
-  }
-  .carousel-item > div div p[class=text-primary] {
-    width: 80vw;
-    font-size: 4vw !important;
-  }
-  .carousel-item > div div p[class=fw-bold] {
-    width: 80vw;
-    font-size: 3vw !important;
-  }
-  .carousel-item > div div p[class=fs-4] {
-    width: 80vw;
-    font-size: 3vw !important;
-  }
-  .carousel-item > div .carousel-item-content {
-    margin: 0 !important;
-    padding: 0 !important;
+    height: 60vh !important;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 5                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 5                                 |
+  |                                                                       |
+  |=======================================================================|
   */
   .section5-form {
     display: flex;
-    flex-direction: column;
+    gap: 1.5vw;
   }
   .section5-form input {
-    width: 29vw;
+    width: 30.4vw;
     height: 8vh;
   }
-  .section5-form textarea {
-    width: 90vw;
-    height: 20vh;
+  textarea#section5-message {
+    width: 94.4vw !important;
+    height: 21vh !important;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 6                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 6                                 |
+  |                                                                       |
+  |=======================================================================|
   */
-  .section6-img {
-    display: flex;
-    flex-direction: column;
-  }
   .section6-img > div > img {
-    width: 100%;
+    width: 23.2vw;
   }
   #gallery1,
   #gallery2,
@@ -614,9 +579,11 @@ body {
     transition: all 500ms ease;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 7                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 7                                 |
+  |                                                                       |
+  |=======================================================================|
   */
   @keyframes text-appear {
     0% {
@@ -640,13 +607,7 @@ body {
   }
   .card {
     overflow: hidden;
-  }
-  .card img {
-    width: 100% !important;
-  }
-  .cards-container {
-    display: flex;
-    flex-direction: column;
+    width: 29vw !important;
   }
   .card-img-overlay:hover {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(1, 1, 1, 0.9));
@@ -660,57 +621,41 @@ body {
     animation: logo-appear 500ms forwards ease-out;
   }
   /*
-  |--------------------------------------------|
-  |               SECTION 8                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                             SECTION 8                                 |
+  |                                                                       |
+  |=======================================================================|
   */
-  .section8 {
-    display: flex;
-    flex-direction: column;
+  .btn-subscribe {
+    position: absolute;
+    right: 16.1vw;
   }
-  .container-iframe {
-    width: 50vw !important;
+  .contain-iframe > iframe {
+    border: 0;
+    height: 40vh;
+    width: 99vw;
   }
-  .container-iframe iframe {
-    width: 80% !important;
-  }
-  .section8-content {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .section8-form {
-    display: flex;
-    flex-direction: column;
-  }
-  #yourname {
-    width: 90vw !important;
-  }
+  #yourname,
   #youremail {
-    width: 90vw !important;
+    width: 28.8vw !important;
+    height: 7vh !important;
   }
   #subject {
-    width: 90vw !important;
+    width: 60vw;
+    height: 7vh;
   }
   #message {
-    width: 90vw !important;
+    width: 60vw;
+    height: 30vh;
   }
   /*
-  |--------------------------------------------|
-  |                  FOOTER                    |
-  |--------------------------------------------|
+  |=======================================================================|
+  |                                                                       |
+  |                               FOOTER                                  |
+  |                                                                       |
+  |=======================================================================|
   */
-  #footer {
-    display: flex;
-    flex-direction: column;
-  }
-  #footer > div > div {
-    display: flex;
-    flex-direction: column;
-  }
-  #footer > div {
-    display: flex;
-    flex-direction: column;
-  }
   .footer-useful,
   .footer-services,
   .footer-newsletter {
@@ -719,15 +664,39 @@ body {
   .footer-phoneNb {
     font-family: Playfair Display;
   }
-  #newsletter1 {
-    width: 80vw;
+  .contact-div {
+    margin-top: 1.5vw !important;
+  }
+  .div-useful {
+    padding-left: 5vw !important;
+    width: 15vw !important;
+  }
+  .useful-ul {
+    width: 20vw !important;
   }
   .newsletter-p {
-    width: 90vw !important;
+    width: 25vw !important;
   }
-  .btn-subscribe {
-    position: absolute;
-    right: 9vw !important;
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #cca35c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cca35c;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .scroll-to-top:hover {
+    background-color: #cca35c;
+    color: #000;
   }
 }
 /*
