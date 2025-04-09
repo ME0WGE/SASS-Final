@@ -754,6 +754,7 @@ body {
     font-size: 5vw !important;
   }
   header .header-h2 {
+    font-family: Playfair Display !important;
     font-size: 4vw !important;
   }
   header .header-content {
@@ -945,7 +946,7 @@ body {
     height: 2px;
     background-color: #958D7B;
     opacity: 25%;
-    width: 10vw;
+    width: 20vw !important;
   }
   .section1-div-img {
     position: relative;
@@ -1020,6 +1021,12 @@ body {
   .section-title {
     font-family: Playfair Display;
   }
+  .cards-contain {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   /*
   |=======================================================================|
   |                                                                       |
@@ -1027,6 +1034,11 @@ body {
   |                                                                       |
   |=======================================================================|
   */
+  .section3 .menu-filter-container .menu-selection {
+    gap: 0 !important;
+    margin: 0;
+    padding: 0;
+  }
   .menu-selection > p > a {
     text-decoration: none;
     color: white;
@@ -1037,52 +1049,72 @@ body {
   .starters-item > img,
   .salads-item > img,
   .specialty-item > img {
-    width: 5vw;
+    width: 15vw;
+  }
+  .food-title1,
+  .food-title2,
+  .food-title3,
+  .food-title4,
+  .food-title5,
+  .food-title6,
+  .food-title7,
+  .food-title8,
+  .food-title9 {
+    font-weight: 900;
   }
   .food-title1::after {
-    content: "................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title2::after {
-    content: ".........................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title3::after {
-    content: "...................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title4::after {
-    content: "........................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title5::after {
-    content: ".......................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title6::after {
-    content: "...................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title7::after {
-    content: "...........................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title8::after {
-    content: "................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   .food-title9::after {
-    content: "..................................................................................................................................";
+    content: "..................................................................................";
     padding: 1vw;
     width: 50vw;
+    font-weight: normal;
   }
   #filter-all:checked ~ * .menu-item,
   #filter-starters:checked ~ * .starters-item,
