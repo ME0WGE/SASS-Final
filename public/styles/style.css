@@ -1304,14 +1304,19 @@ body {
   */
   .section5-form {
     display: flex;
+    flex-direction: column !important;
     gap: 1.5vw;
   }
+  .section5-form #yourname,
+  .section5-form #yourEmail {
+    width: 85vw !important;
+  }
   .section5-form input {
-    width: 30.4vw;
-    height: 8vh;
+    width: 85vw !important;
+    height: 8vh !important;
   }
   textarea#section5-message {
-    width: 94.4vw !important;
+    width: 85vw !important;
     height: 21vh !important;
   }
   /*
