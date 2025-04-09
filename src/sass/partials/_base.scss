@@ -499,7 +499,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 100vh;
+    height: 140vh !important;
   }
   .carousel-image {
     width: 40vw !important;
@@ -566,12 +566,16 @@ body {
       }
       p[class="fw-bold"] {
         width: 80vw;
-        font-size: 4vw !important;
+        font-size: 3vw !important;
       }
       p[class="fs-4"] {
         width: 80vw;
-        font-size: 4vw !important;
+        font-size: 3vw !important;
       }
+    }
+    .carousel-item-content {
+      margin: 0 !important;
+      padding: 0 !important;
     }
   }
 
