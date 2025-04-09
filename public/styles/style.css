@@ -729,6 +729,7 @@ body {
   */
   nav {
     font-family: Montserrat;
+    height: 10vh !important;
   }
   header {
     font-family: Montserrat;
@@ -746,6 +747,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+  }
+  .header-content {
+    gap: 15vw;
   }
   .overlay {
     position: fixed;
@@ -979,6 +983,11 @@ body {
   .img-menu {
     border: 0.4vw solid #484642;
   }
+  .starters-item > img,
+  .salads-item > img,
+  .specialty-item > img {
+    width: 5vw;
+  }
   .food-title1::after {
     content: "................................................................................................................................";
     padding: 1vw;
@@ -1118,6 +1127,12 @@ body {
     width: 40vw !important;
     height: 50vh !important;
   }
+  .carousel-div-titles {
+    width: 40vw;
+  }
+  .carousel-ul {
+    list-style: none;
+  }
   .price1::before {
     content: "______";
     position: absolute;
@@ -1173,6 +1188,7 @@ body {
   */
   .section5-form {
     display: flex;
+    gap: 1.5vw;
   }
   .section5-form input {
     width: 30.4vw;
@@ -1263,6 +1279,7 @@ body {
   }
   .card {
     overflow: hidden;
+    width: 29vw !important;
   }
   .card-img-overlay:hover {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(1, 1, 1, 0.9));
@@ -1282,7 +1299,25 @@ body {
   */
   .btn-subscribe {
     position: absolute;
-    right: 17.9vw;
+    right: 16.1vw;
+  }
+  .contain-iframe > iframe {
+    border: 0;
+    height: 40vh;
+    width: 99vw;
+  }
+  #yourname,
+  #youremail {
+    width: 28.8vw !important;
+    height: 7vh !important;
+  }
+  #subject {
+    width: 60vw;
+    height: 7vh;
+  }
+  #message {
+    width: 60vw;
+    height: 30vh;
   }
   /*
   |--------------------------------------------|
@@ -1296,6 +1331,19 @@ body {
   }
   .footer-phoneNb {
     font-family: Playfair Display;
+  }
+  .contact-div {
+    margin-top: 1.5vw !important;
+  }
+  .div-useful {
+    padding-left: 5vw !important;
+    width: 15vw !important;
+  }
+  .useful-ul {
+    width: 20vw !important;
+  }
+  .newsletter-p {
+    width: 25vw !important;
   }
   .scroll-to-top {
     position: fixed;

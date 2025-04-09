@@ -289,51 +289,6 @@ body {
   .section-title2 {
     width: 80vw !important;
   }
-  // TOP-LEFT
-  // .section1-div-img::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 7vh;
-  //   left: 1vw;
-  //   border-top: 5px solid $text-color;
-  //   border-left: 5px solid $text-color;
-  //   z-index: 1;
-  // }
-  // BOTTOM-RIGHT
-  // .section1-div-img::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: -4.5vh;
-  //   right: 1vw;
-  //   border-bottom: 5px solid $text-color;
-  //   border-right: 5px solid $text-color;
-  //   z-index: 1;
-  // }
-  // .section1-div-img::before,
-  // .section1-div-img::after {
-  //   width: 3.5vw;
-  //   height: 3.5vw;
-  // }
-
-  // // TRANSITION ON HOVER -- BOTTOM-RIGHT
-  // .section1-div-img:hover::after {
-  //   bottom: -5.5vh;
-  //   right: 0.5vw;
-  // }
-  // // TRANSITION ON HOVER -- TOP-LEFT
-  // .section1-div-img:hover::before {
-  //   top: 6vh;
-  //   left: 0.5vw;
-  // }
-  // // TRANSITION IMG SIZE++
-  // .section1-div-img:hover {
-  //   transform: scale(1.02);
-  //   transition: ease 500ms;
-  // }
-  // .section1-div-img::before,
-  // .section1-div-img::after {
-  //   transition: ease 500ms;
-  // }
 
   /*
   |--------------------------------------------|
@@ -854,6 +809,7 @@ body {
 */
   nav {
     font-family: Montserrat;
+    height: 10vh !important;
   }
   header {
     font-family: Montserrat;
@@ -874,9 +830,11 @@ body {
     background-size: cover;
     height: 100vh;
   }
+  .header-content {
+    gap: 15vw;
+  }
 
   // VIDEO POP UP MODAL
-
   .overlay {
     position: fixed;
     top: 0;
@@ -1142,6 +1100,11 @@ body {
   .img-menu {
     border: 0.4vw solid #484642;
   }
+  .starters-item > img,
+  .salads-item > img,
+  .specialty-item > img {
+    width: 5vw;
+  }
   .food-title1::after {
     content: "................................................................................................................................";
     padding: 1vw;
@@ -1297,6 +1260,12 @@ body {
     width: 40vw !important;
     height: 50vh !important;
   }
+  .carousel-div-titles {
+    width: 40vw;
+  }
+  .carousel-ul {
+    list-style: none;
+  }
   .price1::before {
     content: "______";
     position: absolute;
@@ -1356,11 +1325,14 @@ body {
 */
   .section5-form {
     display: flex;
+    gap: 1.5vw;
+
     input {
       width: 30.4vw;
       height: 8vh;
     }
   }
+
   textarea#section5-message {
     width: 94.4vw !important;
     height: 21vh !important;
@@ -1449,6 +1421,7 @@ body {
   // CODE
   .card {
     overflow: hidden;
+    width: 29vw !important;
   }
   .card-img-overlay:hover {
     background-image: linear-gradient(
@@ -1474,7 +1447,25 @@ body {
 */
   .btn-subscribe {
     position: absolute;
-    right: 17.9vw;
+    right: 16.1vw;
+  }
+  .contain-iframe > iframe {
+    border: 0;
+    height: 40vh;
+    width: 99vw;
+  }
+  #yourname,
+  #youremail {
+    width: 28.8vw !important;
+    height: 7vh !important;
+  }
+  #subject {
+    width: 60vw;
+    height: 7vh;
+  }
+  #message {
+    width: 60vw;
+    height: 30vh;
   }
   /*
 |--------------------------------------------|
@@ -1489,6 +1480,20 @@ body {
   }
   .footer-phoneNb {
     font-family: Playfair Display;
+  }
+
+  .contact-div {
+    margin-top: 1.5vw !important;
+  }
+  .div-useful {
+    padding-left: 5vw !important;
+    width: 15vw !important;
+  }
+  .useful-ul {
+    width: 20vw !important;
+  }
+  .newsletter-p {
+    width: 25vw !important;
   }
 
   .scroll-to-top {
