@@ -1308,7 +1308,7 @@ body {
     gap: 1.5vw;
   }
   .section5-form #yourname,
-  .section5-form #yourEmail {
+  .section5-form #youremail {
     width: 85vw !important;
   }
   .section5-form input {
@@ -1326,8 +1326,10 @@ body {
   |                                                                       |
   |=======================================================================|
   */
-  .section6-img > div > img {
-    width: 23.2vw;
+  .section6-img {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 85vw !important;
   }
   #gallery1,
   #gallery2,

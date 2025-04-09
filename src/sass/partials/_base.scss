@@ -1447,7 +1447,7 @@ body {
     gap: 1.5vw;
 
     #yourname,
-    #yourEmail {
+    #youremail {
       width: 85vw !important;
     }
 
@@ -1468,9 +1468,12 @@ body {
 |                                                                       |
 |=======================================================================|
 */
-  .section6-img > div > img {
-    width: 23.2vw;
+  .section6-img {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 85vw !important;
   }
+
   #gallery1,
   #gallery2,
   #gallery3,
