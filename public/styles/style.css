@@ -429,7 +429,7 @@ body {
   }
   .cards-menu > div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
   .cards-menu > div {
     display: flex;
@@ -539,7 +539,12 @@ body {
     flex-direction: column;
   }
   .section5-form input {
-    width: 90vw !important;
+    width: 29vw;
+    height: 8vh;
+  }
+  .section5-form textarea {
+    width: 90vw;
+    height: 20vh;
   }
   /*
   |--------------------------------------------|
@@ -1166,6 +1171,17 @@ body {
   |               SECTION 5                    |
   |--------------------------------------------|
   */
+  .section5-form {
+    display: flex;
+  }
+  .section5-form input {
+    width: 30.4vw;
+    height: 8vh;
+  }
+  textarea#section5-message {
+    width: 94vw !important;
+    height: 20vh !important;
+  }
   /*
   |--------------------------------------------|
   |               SECTION 6                    |

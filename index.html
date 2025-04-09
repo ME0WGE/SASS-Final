@@ -10,16 +10,24 @@
     ></script>
     <title>CBIENBON</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="85"
+    tabindex="0"
+  >
     <!-- SECTION HEADER & NAVBAR -->
     <section class="d-flex flex-column">
       <!-- NAVBAR -->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-black bg-opacity-75 fixed-top border-bottom border-2 border-opacity-25 border-light"
         style="height: 13vh !important"
+        id="navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white fs-1 m-0 m-1 ms-5 cbienbon" href="#top"
+          <a
+            class="navbar-brand text-white fs-1 m-0 m-1 ms-5 cbienbon"
+            href="#top"
             >CBIENBON</a
           >
           <!-- BURGIR -->
@@ -336,7 +344,7 @@
 
         <!-- MENU -->
         <div
-          class="menu d-flex flex-column justify-content-center p-5 pt-0 cards-menu wrap"
+          class="menu d-flex flex-wrap justify-content-center p-5 pt-0 cards-menu"
         >
           <!-- ROW 1 -->
           <div class="d-flex">
@@ -608,7 +616,10 @@
                 class="d-block carousel-image"
                 alt="Private Parties"
               />
-              <div class="ms-5 fw-bold carousel-item-content" style="width: 40vw">
+              <div
+                class="ms-5 fw-bold carousel-item-content"
+                style="width: 40vw"
+              >
                 <p class="text-primary fw-bold fs-1">Private Parties</p>
                 <p class="fw-bold fs-1 price2">$290</p>
                 <p class="fs-4">
@@ -713,21 +724,18 @@
             id="yourname"
             placeholder="Your Name"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           /><input
             type="text"
             name="YourEmail"
             id="youremail"
             placeholder="Your Email"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           /><input
             type="text"
             name="Your Phone"
             id="yourphone"
             placeholder="Your Phone"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           />
         </div>
         <div class="d-flex pb-3 section5-form" style="gap: 1.5vw">
@@ -737,32 +745,28 @@
             id="date"
             placeholder="Date"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           /><input
             type="text"
             name="Time"
             id="time"
             placeholder="Time"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           /><input
             type="text"
             name="People"
             id="people"
             placeholder="# of people"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 text-white fs-4"
-            style="width: 29vw; height: 8vh"
           />
         </div>
         <div>
           <textarea
             name="Message"
-            id="message"
+            id="section5-message"
             placeholder="Message"
             cols="75"
             rows="5"
             class="bg-dark border border-2 border-light border-opacity-50 ps-3 pt-3 text-white fs-4"
-            style="width: 90vw; height: 20vh"
           ></textarea>
         </div>
         <div>

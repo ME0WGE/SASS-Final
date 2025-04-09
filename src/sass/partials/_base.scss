@@ -508,7 +508,7 @@ body {
 
   .cards-menu > div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
 
   .cards-menu > div {
@@ -628,7 +628,13 @@ body {
     display: flex;
     flex-direction: column;
     input {
-      width: 90vw !important;
+      width: 29vw;
+      height: 8vh;
+    }
+
+    textarea {
+      width: 90vw;
+      height: 20vh;
     }
   }
   /*
@@ -1348,6 +1354,17 @@ body {
 |               SECTION 5                    |
 |--------------------------------------------|
 */
+  .section5-form {
+    display: flex;
+    input {
+      width: 30.4vw;
+      height: 8vh;
+    }
+  }
+  textarea#section5-message {
+    width: 94vw !important;
+    height: 20vh !important;
+  }
   /*
 |--------------------------------------------|
 |               SECTION 6                    |
