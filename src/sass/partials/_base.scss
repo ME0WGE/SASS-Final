@@ -1628,9 +1628,8 @@ body {
         }
       }
     }
-
   }
-  
+
   #yourname,
   #youremail {
     width: 39vw !important;
@@ -1646,7 +1645,6 @@ body {
     height: 25vh;
   }
 
-  
   /*
   |=======================================================================|
   |                                                                       |
@@ -1654,11 +1652,53 @@ body {
   |                                                                       |
   |=======================================================================|
   */
+  footer {
+    div.row {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      div {
+        h5 {
+          font-size: 5vw !important;
+        }
+      }
+
+      .div-useful-container {
+        display: flex !important;
+        justify-content: start !important;
+        align-items: center !important;
+        gap: 30vw !important;
+      }
+    }
+
+    .newsletter-container {
+      text-align: start !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      form {
+        text-align: center !important;
+        .newsletter-p {
+          text-align: start !important;
+          width: 85vw !important;
+        }
+      }
+    }
+  }
+
   .btn-subscribe {
     position: absolute;
-    right: 16.1vw;
+    right: 12vw;
   }
-  
+
+  #newsletter1 {
+    width: 79.5vw !important;
+  }
+
   .footer-useful,
   .footer-services,
   .footer-newsletter {
