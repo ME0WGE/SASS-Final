@@ -1466,11 +1466,6 @@ body {
   .card-img-overlay:hover .card-socials {
     animation: logo-appear 500ms forwards ease-out;
   }
-  // .card-title,
-  // .card-text:hover {
-  //   transition: 500ms ease;
-  //   animation: text-appear 500ms ease 1 normal;
-  // }
 
   /*
 |--------------------------------------------|
@@ -1494,5 +1489,28 @@ body {
   }
   .footer-phoneNb {
     font-family: Playfair Display;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid $text-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .scroll-to-top:hover {
+    background-color: $text-color;
+    color: #000;
   }
 }
