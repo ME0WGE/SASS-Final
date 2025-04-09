@@ -785,16 +785,47 @@ body {
     background: #d2a84a;
     transform: scale(1.05);
   }
+  .play-button:active a i {
+    transform: scale(5);
+  }
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0.5);
     }
     70% {
-      box-shadow: 0 0 0 10px rgba(210, 168, 74, 0);
+      box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
     }
     100% {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0);
     }
+  }
+  .div-player {
+    overflow: hidden !important;
+    width: 10vw;
+    height: 15vw;
+  }
+  .div2-player {
+    overflow: hidden;
+  }
+  @keyframes play-btn-scale {
+    0% {
+      transform: scale(1);
+      z-index: 0;
+    }
+    50% {
+      transform: scale(5);
+      z-index: 0;
+    }
+    100% {
+      transform: scale(20);
+      z-index: 0;
+    }
+  }
+  a[href="#video-overlay"] {
+    overflow: hidden !important;
+  }
+  a[href="#video-overlay"] > i:hover {
+    animation: play-btn-scale 500ms linear infinite;
   }
   /*
   |--------------------------------------------|
