@@ -992,13 +992,36 @@ body {
     z-index: -1;
     background-size: cover;
     background-position-y: 75%;
-    height: 85vh;
+    height: 140vh;
 
     .section1-div-img {
       height: 75% !important;
+      margin-left: 6vw !important;
     }
     img[src="./public/assets/img/about.jpg"] {
       width: 45vw;
+    }
+
+    .section-title {
+      width: 80vw !important;
+      padding-top: 70vw !important;
+      padding-left: 3.5vw !important;
+    }
+
+    .section-title2 {
+      width: 85vw !important;
+      padding-left: 3.5vw !important;
+    }
+
+    .section1-content-container {
+      width: 85vw !important;
+      font-size: 2.5vw !important;
+      padding-left: 3.5vw !important;
+    }
+
+    #section1 {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
     }
   }
   // title::after line
@@ -1024,16 +1047,17 @@ body {
     overflow: visible;
   }
   .section1-div-img img {
-    display: block;
-    max-width: 100%;
+    width: 90vw !important;
     height: auto;
+    position: absolute;
+    right: -32vw !important;
   }
   // TOP-LEFT
   .section1-div-img::before {
     content: "";
     position: absolute;
-    top: 7vh;
-    left: 1vw;
+    top: 7vh !important;
+    right: 47.5vw !important;
     border-top: 5px solid $text-color;
     border-left: 5px solid $text-color;
     z-index: 1;
@@ -1042,27 +1066,27 @@ body {
   .section1-div-img::after {
     content: "";
     position: absolute;
-    bottom: -4.5vh;
-    right: 1vw;
+    bottom: 51vh;
+    left: 21.5vw !important;
     border-bottom: 5px solid $text-color;
     border-right: 5px solid $text-color;
     z-index: 1;
   }
   .section1-div-img::before,
   .section1-div-img::after {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 8vw;
+    height: 8vw;
   }
 
   // TRANSITION ON HOVER -- BOTTOM-RIGHT
   .section1-div-img:hover::after {
-    bottom: -5.5vh;
-    right: 0.5vw;
+    bottom: 50.2vh !important;
+    left: 22.5vw !important;
   }
   // TRANSITION ON HOVER -- TOP-LEFT
   .section1-div-img:hover::before {
-    top: 6vh;
-    left: 0.5vw;
+    top: 6.2vh !important;
+    right: 48.5vw !important;
   }
   // TRANSITION IMG SIZE++
   .section1-div-img:hover {
