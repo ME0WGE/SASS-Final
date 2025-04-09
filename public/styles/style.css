@@ -137,40 +137,71 @@ body {
     height: 100%;
     border: none;
   }
-  .div-player {
-    width: 100px;
-    height: 100px;
-    background-color: var(--bs-primary);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .div2-player {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .div-player:hover {
-    transform: scale(1.1);
-  }
-  .div-player a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-  }
   .div-player i {
     margin: 0;
     padding: 0;
+  }
+  .play-button {
+    width: 6vw;
+    height: 6vw;
+    border-width: 50px !important;
+    background: rgba(210, 168, 74, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(210, 168, 74, 0.7);
+    animation: pulse 2s infinite;
+  }
+  .play-button:hover {
+    background: #d2a84a;
+    transform: scale(1.05);
+  }
+  .play-button:active a i {
+    font-size: 50vw;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(210, 168, 74, 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(210, 168, 74, 0);
+    }
+  }
+  .div-player {
+    overflow: hidden !important;
+    width: 30vw;
+    height: 30vw;
+  }
+  .div2-player {
+    overflow: hidden;
+  }
+  @keyframes play-btn-scale {
+    0% {
+      transform: scale(1);
+      z-index: 0;
+    }
+    50% {
+      transform: scale(5);
+      z-index: 0;
+    }
+    100% {
+      transform: scale(20);
+      z-index: 0;
+    }
+  }
+  a[href="#video-overlay"] {
+    overflow: hidden !important;
+  }
+  a[href="#video-overlay"] > i:hover {
+    animation: play-btn-scale 500ms linear infinite;
   }
   /*
   |--------------------------------------------|
