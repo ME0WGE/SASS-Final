@@ -725,6 +725,8 @@ body {
   }
   nav .navbar-toggler-icon {
     filter: invert(1) brightness(100%);
+    margin-bottom: 1vw !important;
+    font-size: 3vw !important;
   }
   header {
     font-family: Montserrat;
@@ -741,10 +743,31 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: 50% 50%;
     height: 100vh;
   }
-  .header-content {
-    gap: 15vw;
+  header .header-titre-container {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  header .header-titre {
+    font-size: 5vw !important;
+  }
+  header .header-h2 {
+    font-size: 4vw !important;
+  }
+  header .header-content {
+    gap: 0vw;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  header .header-btn-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  header .header-btn-container a {
+    font-size: 3vw !important;
   }
   .overlay {
     position: fixed;
@@ -800,16 +823,23 @@ body {
     margin: 0;
     padding: 0;
   }
+  .div-player {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 98vw !important;
+    height: 100% !important;
+  }
   .play-button {
-    width: 6vw;
-    height: 6vw;
+    width: 15vw;
+    height: 15vw;
     border-width: 50px !important;
-    background: rgba(210, 168, 74, 0.9);
+    background: #cca35c;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8rem auto 0;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -825,7 +855,7 @@ body {
   }
   @keyframes pulse {
     0% {
-      box-shadow: 0 0 0 0 rgba(210, 168, 74, 0.5);
+      box-shadow: 0 0 0 0 rgb(210, 167, 74);
     }
     70% {
       box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
