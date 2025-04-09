@@ -192,7 +192,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    background-position-y: 75%;
+    background-position: 50% 50%;
     height: 85vh;
 
     .section1-div-img {
@@ -217,6 +217,17 @@ body {
     opacity: 25%;
     width: 10vw;
   }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    height: 130vh !important;
+  }
+  #section1 {
+    margin: 0 !important;
+  }
+  .section1-content-container {
+    width: 80vw !important;
+  }
 
   // CORNER BORDERS
   .section1-div-img {
@@ -225,9 +236,18 @@ body {
     overflow: visible;
   }
   .section1-div-img img {
+    margin-top: -145vh !important;
     display: block;
     max-width: 100%;
+    width: 80vw !important;
     height: auto;
+  }
+  .section-title {
+    width: 80vw !important;
+    padding-top: 35vh !important;
+  }
+  .section-title2 {
+    width: 80vw !important;
   }
   // TOP-LEFT
   .section1-div-img::before {
