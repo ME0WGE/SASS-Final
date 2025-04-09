@@ -1603,36 +1603,62 @@ body {
 |                                                                       |
 |=======================================================================|
 */
+  .section8 {
+    .contain-iframe {
+      iframe {
+        width: 98vw !important;
+        height: 40vh !important;
+      }
+    }
+
+    div {
+      .contain-info {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+
+    .section8-content {
+      display: flex !important;
+      flex-direction: column !important;
+
+      div {
+        .contain-info {
+          margin-bottom: 5vw !important;
+        }
+      }
+    }
+
+  }
+  
+  #yourname,
+  #youremail {
+    width: 39vw !important;
+    height: 7vh !important;
+    background-color: red;
+  }
+  #subject {
+    width: 85vw;
+    height: 7vh;
+  }
+  #message {
+    width: 85vw;
+    height: 25vh;
+  }
+
+  
+  /*
+  |=======================================================================|
+  |                                                                       |
+  |                               FOOTER                                  |
+  |                                                                       |
+  |=======================================================================|
+  */
   .btn-subscribe {
     position: absolute;
     right: 16.1vw;
   }
-  .contain-iframe > iframe {
-    border: 0;
-    height: 40vh;
-    width: 99vw;
-  }
-  #yourname,
-  #youremail {
-    width: 28.8vw !important;
-    height: 7vh !important;
-  }
-  #subject {
-    width: 60vw;
-    height: 7vh;
-  }
-  #message {
-    width: 60vw;
-    height: 30vh;
-  }
-  /*
-|=======================================================================|
-|                                                                       |
-|                               FOOTER                                  |
-|                                                                       |
-|=======================================================================|
-*/
-
+  
   .footer-useful,
   .footer-services,
   .footer-newsletter {
