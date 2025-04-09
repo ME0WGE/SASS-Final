@@ -1169,7 +1169,6 @@ body {
   .food-title8,
   .food-title9 {
     font-weight: 900;
-    
   }
 
   .food-title1::after {
@@ -1332,14 +1331,53 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 100vh;
+    height: 160vh !important;
+
+    #carouselExampleIndicators {
+      .carousel-indicators {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .carousel-inner {
+        .carousel-item {
+          div {
+            display: flex !important;
+            flex-direction: column !important;
+
+            img {
+              width: 85vw !important;
+            }
+
+            .carousel-div-titles {
+              width: 85vw !important;
+              margin: 0 !important;
+
+              .carousel-title-p {
+                font-size: 5vw !important;
+                font-family: Playfair Display !important;
+              }
+              .price1,
+              .price2,
+              .price3 {
+                font-size: 5vw !important;
+              }
+              .carousel-ul {
+                font-size: 3vw !important;
+                font-weight: normal;
+              }
+              .carousel-text-p {
+                font-size: 3vw !important;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .carousel-image {
     width: 40vw !important;
     height: 50vh !important;
-  }
-  .carousel-div-titles {
-    width: 40vw;
   }
   .carousel-ul {
     list-style: none;
@@ -1365,7 +1403,7 @@ body {
   // CAROUSEL INDICATORS
   .carousel-indicators {
     position: relative;
-    top: 65vh;
+    top: 115vh !important;
     left: 0;
     right: 0;
     display: flex;
