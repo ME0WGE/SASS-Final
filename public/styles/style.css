@@ -1336,7 +1336,12 @@ body {
   .section6-img {
     display: flex !important;
     flex-wrap: wrap !important;
-    width: 85vw !important;
+  }
+  .section6-img div {
+    width: 33% !important;
+  }
+  .section6-img div img {
+    width: 100% !important;
   }
   #gallery1,
   #gallery2,
@@ -1383,6 +1388,9 @@ body {
     transform: scale(1.08);
     z-index: 0;
     transition: all 500ms ease;
+  }
+  .section6-div-container {
+    flex-wrap: wrap !important;
   }
   /*
   |=======================================================================|
