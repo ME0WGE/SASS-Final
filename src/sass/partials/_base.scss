@@ -146,7 +146,7 @@ body {
   }
 
   .close-btn:hover {
-    color: var(--bs-primary);
+    color: $text-color;
   }
 
   .video-container {
@@ -228,6 +228,13 @@ body {
   }
   .div2-player {
     overflow: hidden;
+
+    a {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
   }
 
   @keyframes play-btn-scale {
@@ -548,11 +555,11 @@ body {
   }
 
   .filter-label:hover {
-    color: var(--bs-primary);
+    color: $text-color;
   }
 
   .filter-input:checked + .filter-label {
-    color: var(--bs-primary);
+    color: $text-color;
     font-weight: bold;
   }
 
@@ -563,7 +570,7 @@ body {
     left: 0.5rem;
     right: 0.5rem;
     height: 0.125rem;
-    background-color: var(--bs-primary);
+    background-color: $text-color;
   }
 
   .cards-menu {
@@ -1200,7 +1207,7 @@ body {
   }
 
   .close-btn:hover {
-    color: var(--bs-primary);
+    color: $text-color;
   }
 
   .video-container {
@@ -1600,11 +1607,11 @@ body {
   }
 
   .filter-label:hover {
-    color: var(--bs-primary);
+    color: $text-color;
   }
 
   .filter-input:checked + .filter-label {
-    color: var(--bs-primary);
+    color: $text-color;
     font-weight: bold;
   }
 
@@ -1615,7 +1622,7 @@ body {
     left: 0.5rem;
     right: 0.5rem;
     height: 0.125rem;
-    background-color: var(--bs-primary);
+    background-color: $text-color;
   }
 
   .cards-menu {
