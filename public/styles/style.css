@@ -474,8 +474,7 @@ body {
   #filter-starters:checked ~ * .menu-item:not(.starters-item),
   #filter-salads:checked ~ * .menu-item:not(.salads-item),
   #filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
-    display: none;
-    visibility: collapse !important;
+    display: none !important;
     height: 0;
     max-height: 0;
     margin: 0;
@@ -1377,7 +1376,7 @@ body {
   #filter-starters:checked ~ * .menu-item:not(.starters-item),
   #filter-salads:checked ~ * .menu-item:not(.salads-item),
   #filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
-    display: none;
+    display: none !important;
     opacity: 0;
     height: 0;
     max-height: 0;
@@ -2151,8 +2150,7 @@ body {
   #filter-starters:checked ~ * .menu-item:not(.starters-item),
   #filter-salads:checked ~ * .menu-item:not(.salads-item),
   #filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
-    display: none;
-    visibility: collapse !important;
+    display: none !important;
     height: 0;
     max-height: 0;
     margin: 0;
