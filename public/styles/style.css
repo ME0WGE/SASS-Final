@@ -800,6 +800,10 @@ body {
     width: 98vw !important;
     height: 40vh !important;
   }
+  .section8 .section8-form-container .section8-form {
+    display: flex !important;
+    flex-direction: column !important;
+  }
   .section8 div .contain-info {
     padding: 0 !important;
     margin: 0 !important;
@@ -813,7 +817,7 @@ body {
   }
   #yourname,
   #youremail {
-    width: 39vw !important;
+    width: 85vw !important;
     height: 7vh !important;
     background-color: red;
   }
