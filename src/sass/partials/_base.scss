@@ -1970,11 +1970,15 @@ body {
         }
       }
     }
+    .section8-form {
+      display: flex !important;
+      flex-direction: column !important;
+    }
   }
 
   #yourname,
   #youremail {
-    width: 39vw !important;
+    width: 85vw !important;
     height: 7vh !important;
     background-color: red;
   }

@@ -1706,9 +1706,13 @@ body {
   .section8 .section8-content div .contain-info {
     margin-bottom: 5vw !important;
   }
+  .section8 .section8-form {
+    display: flex !important;
+    flex-direction: column !important;
+  }
   #yourname,
   #youremail {
-    width: 39vw !important;
+    width: 85vw !important;
     height: 7vh !important;
     background-color: red;
   }
