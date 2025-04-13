@@ -645,10 +645,16 @@ body {
   |                                                                       |
   |=======================================================================|
   */
+  .section5 .section5-title-reservation {
+    font-size: 4vw !important;
+  }
+  .section5 .section-title {
+    font-size: 8vw !important;
+  }
   .section5-form {
     display: flex;
     flex-direction: column !important;
-    gap: 1.5vw;
+    gap: 5vw;
   }
   .section5-form #yourname,
   .section5-form #youremail {

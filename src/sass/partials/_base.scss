@@ -718,14 +718,19 @@ body {
 |                                                                       |
 |=======================================================================|
 */
+  .section5 {
+    .section5-title-reservation {
+      font-size: 4vw !important;
+    }
+    .section-title {
+      font-size: 8vw !important;
+    }
+  }
+
   .section5-form {
     display: flex;
     flex-direction: column !important;
-    gap: 1.5vw;
-
-    // input {
-    //   width: 33% !important;
-    // }
+    gap: 5vw;
 
     #yourname,
     #youremail {
