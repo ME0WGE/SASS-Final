@@ -902,7 +902,7 @@ body {
   .section8 {
     .contain-iframe {
       iframe {
-        width: 98vw !important;
+        width: 95vw !important;
         height: 40vh !important;
       }
     }
@@ -960,7 +960,7 @@ body {
       display: flex !important;
       flex-direction: column !important;
       justify-content: center !important;
-      align-items: center !important;
+      align-items: start !important;
 
       div {
         h5 {
@@ -968,11 +968,38 @@ body {
         }
       }
 
+      .contact-div {
+        div {
+          .footer-phone,
+          .footer-email {
+            width: 10vw !important;
+            font-size: 3vw !important;
+          }
+          .footer-phoneNb {
+            width: 60vw !important;
+          }
+        }
+      }
+
       .div-useful-container {
         display: flex !important;
+        flex-direction: column !important;
         justify-content: start !important;
-        align-items: center !important;
-        gap: 30vw !important;
+        align-items: start !important;
+        gap: 1vw !important;
+
+        .div-useful {
+          padding-left: 0 !important;
+
+          ul > li {
+            width: 30vw !important;
+          }
+
+          h5 {
+            font-size: 5vw !important;
+            width: 30vw !important;
+          }
+        }
       }
     }
 
@@ -982,6 +1009,10 @@ body {
       flex-direction: column !important;
       justify-content: center !important;
       align-items: center !important;
+
+      h5 {
+        text-align: start !important;
+      }
 
       form {
         text-align: center !important;
@@ -1029,8 +1060,8 @@ body {
     position: fixed;
     bottom: 3vw;
     right: 3vw;
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
+    height: 8vw;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid $text-color;
     border-radius: 50%;
