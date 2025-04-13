@@ -508,7 +508,7 @@ body {
   #filter-salads:checked ~ * .salads-item,
   #filter-specialty:checked ~ * .specialty-item {
     display: flex;
-    opacity: 1;
+    visibility: visible !important;
     height: auto;
     max-height: 500px;
     margin: 1rem !important;
@@ -522,7 +522,7 @@ body {
   #filter-salads:checked ~ * .menu-item:not(.salads-item),
   #filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
     display: none;
-    opacity: 0;
+    visibility: collapse !important;
     height: 0;
     max-height: 0;
     margin: 0;
@@ -535,7 +535,7 @@ body {
 
   .filter-input {
     position: absolute;
-    opacity: 0;
+    visibility: collapse !important;
     cursor: pointer;
     height: 0;
     width: 0;
@@ -2450,7 +2450,7 @@ body {
   #filter-salads:checked ~ * .salads-item,
   #filter-specialty:checked ~ * .specialty-item {
     display: flex;
-    opacity: 1;
+    visibility: visible !important;
     height: auto;
     max-height: 500px;
     margin: 1rem !important;
@@ -2464,7 +2464,7 @@ body {
   #filter-salads:checked ~ * .menu-item:not(.salads-item),
   #filter-specialty:checked ~ * .menu-item:not(.specialty-item) {
     display: none;
-    opacity: 0;
+    visibility: collapse !important;
     height: 0;
     max-height: 0;
     margin: 0;
@@ -2477,7 +2477,7 @@ body {
 
   .filter-input {
     position: absolute;
-    opacity: 0;
+    visibility: collapse !important;
     cursor: pointer;
     height: 0;
     width: 0;
@@ -2491,11 +2491,11 @@ body {
   }
 
   .filter-label:hover {
-    color: var(--bs-primary);
+    color: $text-color;
   }
 
   .filter-input:checked + .filter-label {
-    color: var(--bs-primary);
+    color: $text-color;
     font-weight: bold;
   }
 
@@ -2506,7 +2506,7 @@ body {
     left: 0.5rem;
     right: 0.5rem;
     height: 0.125rem;
-    background-color: var(--bs-primary);
+    background-color: $text-color;
   }
 
   .cards-menu {
@@ -2627,6 +2627,12 @@ body {
     input {
       width: 30.4vw;
       height: 8vh;
+    }
+
+    #yourname,
+    #youremail,
+    #yourphone {
+      width: 30.3vw !important;
     }
   }
 
@@ -2777,6 +2783,15 @@ body {
 |                                                                       |
 |=======================================================================|
 */
+
+  footer.row {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .div-useful-container {
+    display: flex !important;
+    width: 25vw !important;
+  }
 
   .footer-useful,
   .footer-services,
