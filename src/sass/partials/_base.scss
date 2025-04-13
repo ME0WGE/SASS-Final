@@ -300,7 +300,7 @@ body {
       padding-left: 0 !important;
     }
   }
-  // title::after line
+  // title::after line ALL SECTIONS
   .section2-whyus::after,
   .section3-title-menu::after,
   .section4-title-events::after,
@@ -313,7 +313,7 @@ body {
     height: 2px;
     background-color: $border-color;
     opacity: 25%;
-    width: 20vw !important;
+    width: 25vw !important;
   }
 
   // CORNER BORDERS
@@ -381,11 +381,11 @@ body {
 |                                                                       |
 |=======================================================================|
 */
+
   .cards {
-    padding: 5vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 10vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
   .cards:hover {
     background-image: linear-gradient($card-hover);
@@ -396,6 +396,7 @@ body {
   }
   .section-title {
     font-family: Playfair Display;
+    font-size: 8vw !important;
   }
 
   .cards-contain {

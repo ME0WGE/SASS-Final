@@ -288,7 +288,7 @@ body {
     height: 2px;
     background-color: #958D7B;
     opacity: 25%;
-    width: 20vw !important;
+    width: 25vw !important;
   }
   .section1-div-img {
     position: relative;
@@ -348,10 +348,9 @@ body {
   |=======================================================================|
   */
   .cards {
-    padding: 5vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 10vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
   .cards:hover {
     background-image: linear-gradient(#c49851);
@@ -362,6 +361,7 @@ body {
   }
   .section-title {
     font-family: Playfair Display;
+    font-size: 8vw !important;
   }
   .cards-contain {
     display: flex !important;
