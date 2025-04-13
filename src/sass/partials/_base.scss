@@ -757,10 +757,10 @@ body {
   .section6-img {
     display: flex !important;
     flex-wrap: wrap !important;
-    // width: 33% !important;
+    width: 100% !important;
 
     div {
-      width: 33% !important;
+      width: 100% !important;
       img {
         width: 100% !important;
       }

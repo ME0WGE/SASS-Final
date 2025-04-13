@@ -678,9 +678,10 @@ body {
   .section6-img {
     display: flex !important;
     flex-wrap: wrap !important;
+    width: 100% !important;
   }
   .section6-img div {
-    width: 33% !important;
+    width: 100% !important;
   }
   .section6-img div img {
     width: 100% !important;
