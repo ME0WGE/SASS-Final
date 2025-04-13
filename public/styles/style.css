@@ -99,8 +99,9 @@ body {
   }
   header .header-btn-container {
     display: flex !important;
-    align-items: center !important;
+    flex-direction: row !important;
     justify-content: center !important;
+    align-items: center !important;
   }
   header .header-btn-container a {
     font-size: 2.75vw !important;
@@ -1009,8 +1010,9 @@ body {
   }
   header .header-btn-container {
     display: flex !important;
-    align-items: center !important;
+    flex-direction: row !important;
     justify-content: center !important;
+    align-items: center !important;
   }
   header .header-btn-container a {
     font-size: 2.75vw !important;

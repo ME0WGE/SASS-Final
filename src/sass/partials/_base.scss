@@ -88,18 +88,13 @@ body {
 
     .header-content {
       gap: 0vw;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
+      @include d-flex-column-center;
       text-align: center !important;
       width: 80vw !important;
     }
 
     .header-btn-container {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
+      @include d-flex-row-center;
 
       a {
         font-size: 2.75vw !important;
@@ -407,10 +402,7 @@ body {
   }
 
   .cards-contain {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    @include d-flex-column-center;
   }
   /*
 |=======================================================================|
@@ -963,10 +955,7 @@ body {
   */
   footer {
     div.row {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: start !important;
+      @include d-flex-column-start;
 
       div {
         h5 {
@@ -1158,9 +1147,7 @@ body {
     }
 
     .header-btn-container {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
+      @include d-flex-row-center;
 
       a {
         font-size: 2.75vw !important;
@@ -2006,10 +1993,7 @@ body {
   */
   footer {
     div.row {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
+      @include d-flex-column-center;
 
       div {
         h5 {
@@ -2027,10 +2011,7 @@ body {
 
     .newsletter-container {
       text-align: start !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
+      @include d-flex-column-center;
 
       form {
         text-align: center !important;
@@ -2794,8 +2775,7 @@ body {
 */
 
   footer.row {
-    display: flex !important;
-    flex-direction: row !important;
+    @include d-flex-row;
   }
   .div-useful-container {
     display: flex !important;
