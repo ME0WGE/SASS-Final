@@ -622,6 +622,7 @@ body {
 
             img {
               width: 85vw !important;
+              height: 35vh !important;
             }
 
             .carousel-div-titles {
@@ -629,20 +630,20 @@ body {
               margin: 0 !important;
 
               .carousel-title-p {
-                font-size: 5vw !important;
+                font-size: 6vw !important;
                 font-family: Playfair Display !important;
               }
               .price1,
               .price2,
               .price3 {
-                font-size: 5vw !important;
+                font-size: 6vw !important;
               }
               .carousel-ul {
-                font-size: 3vw !important;
+                font-size: 4vw !important;
                 font-weight: normal;
               }
               .carousel-text-p {
-                font-size: 3vw !important;
+                font-size: 4vw !important;
                 font-weight: normal;
               }
             }
@@ -691,8 +692,8 @@ body {
   }
 
   .carousel-indicators button {
-    width: 1vw !important;
-    height: 1vw !important;
+    width: 3vw !important;
+    height: 3vw !important;
     border-radius: 50%;
     background-color: #777;
     border: none;

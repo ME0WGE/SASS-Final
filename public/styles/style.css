@@ -560,26 +560,27 @@ body {
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div img {
     width: 85vw !important;
+    height: 35vh !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles {
     width: 85vw !important;
     margin: 0 !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-title-p {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
     font-family: Playfair Display !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price1,
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price2,
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price3 {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-ul {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
     font-weight: normal;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-text-p {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
     font-weight: normal;
   }
   .carousel-image {
@@ -620,8 +621,8 @@ body {
     gap: 0.25vw !important;
   }
   .carousel-indicators button {
-    width: 1vw !important;
-    height: 1vw !important;
+    width: 3vw !important;
+    height: 3vw !important;
     border-radius: 50%;
     background-color: #777;
     border: none;
