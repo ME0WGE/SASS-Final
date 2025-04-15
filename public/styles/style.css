@@ -2466,32 +2466,37 @@ body {
     font-family: Playfair Display;
   }
   .contact-div {
-    margin-top: 1.5vw !important;
+    margin-top: 1.5rem !important;
   }
   .div-useful {
-    padding-left: 5vw !important;
-    width: 15vw !important;
+    padding-left: 5rem !important;
+    width: 20rem !important;
   }
   .useful-ul {
-    width: 20vw !important;
+    width: 20rem !important;
   }
   .newsletter-p {
-    width: 25vw !important;
+    padding-left: 10rem !important;
+    width: 35rem !important;
+  }
+  .footer-newsletter,
+  .newsletter-email-div {
+    padding-left: 10rem !important;
   }
   .scroll-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #cca35c;
+    border: 0.2rem solid #cca35c;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #cca35c;
-    font-size: 24px;
+    font-size: 2rem;
     cursor: pointer;
     transition: all 0.3s ease;
   }
