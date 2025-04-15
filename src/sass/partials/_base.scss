@@ -2355,10 +2355,10 @@ body {
 |=======================================================================|
 */
   .cards {
-    padding: 5vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .cards:hover {
     background-image: linear-gradient($card-hover);
@@ -2382,57 +2382,57 @@ body {
     color: white;
   }
   .img-menu {
-    border: 0.4vw solid #484642;
+    border: 0.4rem solid #484642;
   }
   .starters-item > img,
   .salads-item > img,
   .specialty-item > img {
-    width: 5vw;
+    width: 6rem;
   }
   .food-title1::after {
     content: "................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title2::after {
     content: ".........................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title3::after {
     content: "...................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title4::after {
     content: "........................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title5::after {
     content: ".......................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title6::after {
     content: "...................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title7::after {
     content: "...........................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title8::after {
     content: "................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   .food-title9::after {
     content: "..................................................................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
   }
   // SECTION 3 RADIO
 
