@@ -1832,7 +1832,7 @@ body {
   */
   nav {
     font-family: Montserrat;
-    height: 10vh !important;
+    height: 6rem !important;
   }
   header {
     font-family: Montserrat;
@@ -1849,7 +1849,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 65rem;
   }
   .header-content {
     gap: 10rem;
@@ -1984,7 +1984,7 @@ body {
     z-index: -1;
     background-size: cover;
     background-position-y: 75%;
-    height: 85vh;
+    height: 51rem;
   }
   .section1 .section1-div-img {
     height: 75% !important;
@@ -2231,7 +2231,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 100vh;
+    height: 60rem;
   }
   .carousel-image {
     width: 40rem !important;
@@ -2288,7 +2288,7 @@ body {
   }
   .carousel-item div img {
     width: 50rem !important;
-    padding-bottom: 1vw;
+    padding-bottom: 1rem;
     height: 35rem !important;
   }
   /*
@@ -2455,7 +2455,7 @@ body {
   }
   .div-useful-container {
     display: flex !important;
-    width: 25vw !important;
+    width: 25rem !important;
   }
   .footer-useful,
   .footer-services,
