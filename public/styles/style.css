@@ -2300,20 +2300,20 @@ body {
   */
   .section5-form {
     display: flex;
-    gap: 1.5rem;
-  }
-  .section5-form input {
-    width: 30.4vw;
-    height: 8vh;
+    gap: 0.5rem;
   }
   .section5-form #yourname,
   .section5-form #youremail,
-  .section5-form #yourphone {
-    width: 30.3vw !important;
+  .section5-form #yourphone,
+  .section5-form #date,
+  .section5-form #time,
+  .section5-form #people {
+    width: 31.1rem !important;
+    height: 4rem !important;
   }
   textarea#section5-message {
-    width: 94.4vw !important;
-    height: 21vh !important;
+    width: 94.4rem !important;
+    height: 21rem !important;
   }
   /*
   |=======================================================================|

@@ -2612,23 +2612,22 @@ body {
 */
   .section5-form {
     display: flex;
-    gap: 1.5rem;
-
-    input {
-      width: 30.4vw;
-      height: 8vh;
-    }
+    gap: 0.5rem;
 
     #yourname,
     #youremail,
-    #yourphone {
-      width: 30.3vw !important;
+    #yourphone,
+    #date,
+    #time,
+    #people {
+      width: 31.1rem !important;
+      height: 4rem !important;
     }
   }
 
   textarea#section5-message {
-    width: 94.4vw !important;
-    height: 21vh !important;
+    width: 94.4rem !important;
+    height: 21rem !important;
   }
   /*
 |=======================================================================|
