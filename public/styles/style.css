@@ -2422,25 +2422,25 @@ body {
   */
   .btn-subscribe {
     position: absolute;
-    right: 16.1vw;
+    right: 16.1rem;
   }
   .contain-iframe > iframe {
     border: 0;
-    height: 40vh;
-    width: 99vw;
+    height: 25rem;
+    width: 119rem;
   }
   #yourname,
   #youremail {
-    width: 28.8vw !important;
-    height: 7vh !important;
+    width: 28.5rem !important;
+    height: 4rem !important;
   }
   #subject {
-    width: 60vw;
-    height: 7vh;
+    width: 60rem;
+    height: 4rem;
   }
   #message {
-    width: 60vw;
-    height: 30vh;
+    width: 60rem;
+    height: 15rem;
   }
   /*
   |=======================================================================|
