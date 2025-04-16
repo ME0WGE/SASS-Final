@@ -1668,7 +1668,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 160rem !important;
+    height: 90rem !important;
 
     #carouselExampleIndicators {
       .carousel-indicators {
@@ -1682,28 +1682,29 @@ body {
             flex-direction: column !important;
 
             img {
-              width: 85rem !important;
+              width: 52.8rem !important;
             }
 
             .carousel-div-titles {
-              width: 85rem !important;
+              width: 55rem !important;
               margin: 0 !important;
+              padding-left: 1rem !important;
 
               .carousel-title-p {
-                font-size: 5rem !important;
+                font-size: 3rem !important;
                 font-family: Playfair Display !important;
               }
               .price1,
               .price2,
               .price3 {
-                font-size: 5rem !important;
+                font-size: 2.25rem !important;
               }
               .carousel-ul {
-                font-size: 3rem !important;
+                font-size: 1.5rem !important;
                 font-weight: normal;
               }
               .carousel-text-p {
-                font-size: 3rem !important;
+                font-size: 1.25rem !important;
                 font-weight: normal;
               }
             }
@@ -1712,10 +1713,7 @@ body {
       }
     }
   }
-  .carousel-image {
-    width: 40rem !important;
-    height: 50rem !important;
-  }
+
   .carousel-ul {
     list-style: none;
   }
@@ -1740,7 +1738,7 @@ body {
   // CAROUSEL INDICATORS
   .carousel-indicators {
     position: relative;
-    top: 115rem !important;
+    top: 39rem !important;
     left: 0;
     right: 0;
     display: flex;
@@ -1764,11 +1762,6 @@ body {
   .carousel-indicators button.active {
     background-color: $text-color;
     opacity: 1;
-  }
-  .carousel-item div img {
-    width: 45rem !important;
-    padding-bottom: 1rem;
-    height: 60rem !important;
   }
 
   /*

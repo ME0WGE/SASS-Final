@@ -1468,7 +1468,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 160rem !important;
+    height: 90rem !important;
   }
   .section4 #carouselExampleIndicators .carousel-indicators {
     margin: 0 !important;
@@ -1479,32 +1479,29 @@ body {
     flex-direction: column !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div img {
-    width: 85rem !important;
+    width: 52.8rem !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles {
-    width: 85rem !important;
+    width: 55rem !important;
     margin: 0 !important;
+    padding-left: 1rem !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-title-p {
-    font-size: 5rem !important;
+    font-size: 3rem !important;
     font-family: Playfair Display !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price1,
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price2,
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .price3 {
-    font-size: 5rem !important;
+    font-size: 2.25rem !important;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-ul {
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
     font-weight: normal;
   }
   .section4 #carouselExampleIndicators .carousel-inner .carousel-item div .carousel-div-titles .carousel-text-p {
-    font-size: 3rem !important;
+    font-size: 1.25rem !important;
     font-weight: normal;
-  }
-  .carousel-image {
-    width: 40rem !important;
-    height: 50rem !important;
   }
   .carousel-ul {
     list-style: none;
@@ -1529,7 +1526,7 @@ body {
   }
   .carousel-indicators {
     position: relative;
-    top: 115rem !important;
+    top: 39rem !important;
     left: 0;
     right: 0;
     display: flex;
@@ -1551,11 +1548,6 @@ body {
   .carousel-indicators button.active {
     background-color: #cca35c;
     opacity: 1;
-  }
-  .carousel-item div img {
-    width: 45rem !important;
-    padding-bottom: 1rem;
-    height: 60rem !important;
   }
   /*
   |=======================================================================|
