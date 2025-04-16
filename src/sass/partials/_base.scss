@@ -2007,10 +2007,12 @@ body {
   footer {
     div.row {
       @include d-flex-column-center;
-
-      div {
+      div[class="col-6 col-md-2"] {
+        width: 30rem !important;
+        padding-left: 5rem !important;
+        // text-align: center !important;
         h5 {
-          font-size: 5rem !important;
+          font-size: 2rem !important;
         }
       }
 
@@ -2018,19 +2020,21 @@ body {
         display: flex !important;
         justify-content: start !important;
         align-items: center !important;
-        gap: 30rem !important;
+        padding-left: 10rem !important;
+        gap: 5rem !important;
       }
     }
 
     .newsletter-container {
       text-align: start !important;
       @include d-flex-column-center;
+      padding-top: 4rem !important;
 
       form {
         text-align: center !important;
         .newsletter-p {
           text-align: start !important;
-          width: 85rem !important;
+          width: 30rem !important;
         }
       }
     }
@@ -2042,7 +2046,7 @@ body {
   }
 
   #newsletter1 {
-    width: 79.5rem !important;
+    width: 32.2rem !important;
   }
 
   .footer-useful,
@@ -2057,23 +2061,37 @@ body {
   .contact-div {
     margin-top: 1.5rem !important;
   }
-  .div-useful {
-    padding-left: 5rem !important;
-    width: 15rem !important;
+  .div-useful-container {
+    align-self: center !important;
+    .div-useful {
+      width: 20rem !important;
+
+      ul {
+        li {
+          div {
+            width: 15rem !important;
+          }
+        }
+      }
+    }
   }
   .useful-ul {
-    width: 20rem !important;
+    width: 0rem !important;
   }
   .newsletter-p {
-    width: 25rem !important;
+    width: 1rem !important;
+  }
+
+  form {
+    padding-right: 2rem !important;
   }
 
   .scroll-to-top {
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid $text-color;
     border-radius: 50%;
@@ -2089,6 +2107,23 @@ body {
   .scroll-to-top:hover {
     background-color: $text-color;
     color: #000;
+  }
+  .copyright-div {
+    div {
+      div {
+        div {
+          p {
+            font-size: 1rem !important;
+            margin: 0 !important;
+            padding: 0.5rem !important;
+
+            .kb {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /*

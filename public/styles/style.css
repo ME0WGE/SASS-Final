@@ -1751,14 +1751,19 @@ body {
     justify-content: center !important;
     align-items: center !important;
   }
-  footer div.row div h5 {
-    font-size: 5rem !important;
+  footer div.row div[class="col-6 col-md-2"] {
+    width: 30rem !important;
+    padding-left: 5rem !important;
+  }
+  footer div.row div[class="col-6 col-md-2"] h5 {
+    font-size: 2rem !important;
   }
   footer div.row .div-useful-container {
     display: flex !important;
     justify-content: start !important;
     align-items: center !important;
-    gap: 30rem !important;
+    padding-left: 10rem !important;
+    gap: 5rem !important;
   }
   footer .newsletter-container {
     text-align: start !important;
@@ -1766,20 +1771,21 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
+    padding-top: 4rem !important;
   }
   footer .newsletter-container form {
     text-align: center !important;
   }
   footer .newsletter-container form .newsletter-p {
     text-align: start !important;
-    width: 85rem !important;
+    width: 30rem !important;
   }
   .btn-subscribe {
     position: absolute;
     right: 12rem;
   }
   #newsletter1 {
-    width: 79.5rem !important;
+    width: 32.2rem !important;
   }
   .footer-useful,
   .footer-services,
@@ -1792,22 +1798,30 @@ body {
   .contact-div {
     margin-top: 1.5rem !important;
   }
-  .div-useful {
-    padding-left: 5rem !important;
+  .div-useful-container {
+    align-self: center !important;
+  }
+  .div-useful-container .div-useful {
+    width: 20rem !important;
+  }
+  .div-useful-container .div-useful ul li div {
     width: 15rem !important;
   }
   .useful-ul {
-    width: 20rem !important;
+    width: 0rem !important;
   }
   .newsletter-p {
-    width: 25rem !important;
+    width: 1rem !important;
+  }
+  form {
+    padding-right: 2rem !important;
   }
   .scroll-to-top {
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #cca35c;
     border-radius: 50%;
@@ -1822,6 +1836,14 @@ body {
   .scroll-to-top:hover {
     background-color: #cca35c;
     color: #000;
+  }
+  .copyright-div div div div p {
+    font-size: 1rem !important;
+    margin: 0 !important;
+    padding: 0.5rem !important;
+  }
+  .copyright-div div div div p .kb {
+    color: #cca35c;
   }
 }
 /*
