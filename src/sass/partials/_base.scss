@@ -1806,7 +1806,6 @@ body {
   .section6-img {
     display: flex !important;
     flex-wrap: wrap !important;
-    // width: 33% !important;
 
     div {
       width: 33% !important;
@@ -1897,7 +1896,8 @@ body {
   // CODE
   .section7 {
     .card {
-      overflow: hidden;
+      overflow: hidden !important;
+      width: 40rem !important;
     }
 
     .section7-img {
@@ -1908,15 +1908,15 @@ body {
     .card-img-overlay {
       div {
         h5 {
-          font-size: 4rem !important;
+          font-size: 2rem !important;
         }
         p.card-text {
-          font-size: 3rem !important;
+          font-size: 1.5rem !important;
         }
         p.card-socials {
           a {
             i {
-              font-size: 4rem !important;
+              font-size: 2rem !important;
             }
           }
         }
