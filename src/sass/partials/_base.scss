@@ -1951,8 +1951,8 @@ body {
   .section8 {
     .contain-iframe {
       iframe {
-        width: 98rem !important;
-        height: 40rem !important;
+        width: 58.8rem !important;
+        height: 25rem !important;
       }
     }
 
@@ -1969,29 +1969,32 @@ body {
 
       div {
         .contain-info {
-          margin-bottom: 5rem !important;
+          margin-bottom: 2rem !important;
         }
       }
     }
     .section8-form {
       display: flex !important;
       flex-direction: column !important;
+      gap: 2rem !important;
     }
   }
 
   #yourname,
   #youremail {
-    width: 85rem !important;
-    height: 7rem !important;
-    background-color: red;
+    width: 52.4rem !important;
+    height: 5rem !important;
+  }
+  #yourname {
+    margin: 0 !important;
   }
   #subject {
-    width: 85rem;
-    height: 7rem;
+    width: 52.4rem !important;
+    height: 5rem !important;
   }
   #message {
-    width: 85rem;
-    height: 25rem;
+    width: 52.4rem !important;
+    height: 18rem !important;
   }
 
   /*
