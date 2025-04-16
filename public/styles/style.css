@@ -1563,14 +1563,15 @@ body {
   }
   .section5-form #yourname,
   .section5-form #youremail {
-    width: 85rem !important;
+    width: 52.4rem !important;
+    height: 5rem !important;
   }
   .section5-form input {
-    width: 85rem !important;
-    height: 8rem !important;
+    width: 52.4rem !important;
+    height: 5rem !important;
   }
   textarea#section5-message {
-    width: 85rem !important;
+    width: 52.4rem !important;
     height: 21rem !important;
   }
   /*
