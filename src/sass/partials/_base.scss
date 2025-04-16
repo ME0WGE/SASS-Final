@@ -35,19 +35,19 @@ body {
 */
   nav {
     font-family: Montserrat;
-    height: 10vh !important;
+    height: 10rem !important;
 
     .cbienbon {
       margin: 0 !important;
-      font-size: 6vw !important;
+      font-size: 6rem !important;
     }
     .btn-bookatable {
       display: none !important;
     }
     .navbar-toggler-icon {
       filter: invert(1) brightness(100%);
-      margin-bottom: 1vw !important;
-      font-size: 5vw !important;
+      margin-bottom: 1rem !important;
+      font-size: 5rem !important;
     }
   }
   header {
@@ -68,7 +68,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    height: 100vh;
+    height: 100rem;
 
     .header-titre-container {
       width: 100% !important;
@@ -76,28 +76,28 @@ body {
     }
 
     .header-titre {
-      font-size: 7.5vw !important;
-      width: 95vw !important;
+      font-size: 7.5rem !important;
+      width: 95rem !important;
     }
 
     .header-h2 {
       font-family: Playfair Display !important;
-      font-size: 4.5vw !important;
-      width: 95vw !important;
+      font-size: 4.5rem !important;
+      width: 95rem !important;
     }
 
     .header-content {
-      gap: 0vw;
+      gap: 0rem;
       @include d-flex-column-center;
       text-align: center !important;
-      width: 80vw !important;
+      width: 80rem !important;
     }
 
     .header-btn-container {
       @include d-flex-row-center;
 
       a {
-        font-size: 2.75vw !important;
+        font-size: 2.75rem !important;
       }
     }
   }
@@ -169,14 +169,14 @@ body {
     align-items: center !important;
     justify-content: center !important;
     position: absolute;
-    right: 41vw !important;
-    width: 25vw !important;
-    height: 25vw !important;
+    right: 41rem !important;
+    width: 25rem !important;
+    height: 25rem !important;
     float: none !important;
   }
   .play-button {
-    width: 15vw;
-    height: 15vw;
+    width: 15rem;
+    height: 15rem;
     border-width: 50px !important;
     background: $text-color;
     border-radius: 50%;
@@ -210,7 +210,7 @@ body {
       box-shadow: 0 0 0 0 rgb(210, 167, 74);
     }
     70% {
-      box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
+      box-shadow: 0 0 0 2rem rgba(210, 168, 74, 0);
     }
     100% {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0);
@@ -218,8 +218,8 @@ body {
   }
   .div-player {
     overflow: hidden !important;
-    width: 10vw;
-    height: 15vw;
+    width: 10rem;
+    height: 15rem;
   }
   .div2-player {
     overflow: hidden;
@@ -268,33 +268,33 @@ body {
     z-index: -1;
     background-size: cover;
     background-position-y: 75%;
-    height: 150vh;
+    height: 150rem;
 
     .section1-div-img {
       height: 75% !important;
-      margin-left: 6vw !important;
+      margin-left: 6rem !important;
     }
     img[src="./public/assets/img/about.jpg"] {
-      width: 45vw;
+      width: 45rem;
     }
 
     .section-title {
-      width: 85vw !important;
-      padding-top: 70vw !important;
-      padding-left: 3.5vw !important;
-      font-size: 6.5vw !important;
+      width: 85rem !important;
+      padding-top: 70rem !important;
+      padding-left: 3.5rem !important;
+      font-size: 6.5rem !important;
     }
 
     .section-title2 {
-      width: 95vw !important;
-      padding-left: 3.5vw !important;
-      font-size: 4vw !important;
+      width: 95rem !important;
+      padding-left: 3.5rem !important;
+      font-size: 4rem !important;
     }
 
     .section1-content-container {
-      width: 95vw !important;
-      font-size: 3.5vw !important;
-      padding-left: 3.5vw !important;
+      width: 95rem !important;
+      font-size: 3.5rem !important;
+      padding-left: 3.5rem !important;
     }
 
     #section1 {
@@ -315,7 +315,7 @@ body {
     height: 2px;
     background-color: $border-color;
     opacity: 25%;
-    width: 25vw !important;
+    width: 25rem !important;
   }
 
   // CORNER BORDERS
@@ -325,17 +325,17 @@ body {
     overflow: visible;
   }
   .section1-div-img img {
-    width: 90vw !important;
+    width: 90rem !important;
     height: auto;
     position: absolute;
-    right: -32vw !important;
+    right: -32rem !important;
   }
   // TOP-LEFT
   .section1-div-img::before {
     content: "";
     position: absolute;
-    top: 7.5vh !important;
-    right: 42.5vw !important;
+    top: 7.5rem !important;
+    right: 42.5rem !important;
     border-top: 5px solid $text-color;
     border-left: 5px solid $text-color;
     z-index: 1;
@@ -344,27 +344,27 @@ body {
   .section1-div-img::after {
     content: "";
     position: absolute;
-    bottom: 70vh;
-    left: 16.5vw !important;
+    bottom: 70rem;
+    left: 16.5rem !important;
     border-bottom: 5px solid $text-color;
     border-right: 5px solid $text-color;
     z-index: 1;
   }
   .section1-div-img::before,
   .section1-div-img::after {
-    width: 12vw;
-    height: 12vw;
+    width: 12rem;
+    height: 12rem;
   }
 
   // TRANSITION ON HOVER -- BOTTOM-RIGHT
   .section1-div-img:hover::after {
-    bottom: 68.5vh !important;
-    left: 18vw !important;
+    bottom: 68.5rem !important;
+    left: 18rem !important;
   }
   // TRANSITION ON HOVER -- TOP-LEFT
   .section1-div-img:hover::before {
-    top: 6.2vh !important;
-    right: 44vw !important;
+    top: 6.2rem !important;
+    right: 44rem !important;
   }
   // TRANSITION IMG SIZE++
   .section1-div-img:hover {
@@ -385,9 +385,9 @@ body {
 */
 
   .cards {
-    padding: 10vw;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .cards:hover {
     background-image: linear-gradient($card-hover);
@@ -398,7 +398,7 @@ body {
   }
   .section-title {
     font-family: Playfair Display;
-    font-size: 8vw !important;
+    font-size: 8rem !important;
   }
 
   .cards-contain {
@@ -426,12 +426,12 @@ body {
   }
 
   .img-menu {
-    border: 0.4vw solid #484642;
+    border: 0.4rem solid #484642;
   }
   .starters-item > img,
   .salads-item > img,
   .specialty-item > img {
-    width: 25vw;
+    width: 25rem;
   }
 
   .food-title1,
@@ -448,56 +448,56 @@ body {
 
   .food-title1::after {
     content: ".................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title2::after {
     content: "....................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title3::after {
     content: ".................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title4::after {
     content: "...................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title5::after {
     content: "....................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title6::after {
     content: "..................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title7::after {
     content: "..........................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title8::after {
     content: "....................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title9::after {
     content: "...................................................";
-    padding: 1vw;
-    width: 50vw;
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   // SECTION 3 RADIO
@@ -605,7 +605,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 160vh !important;
+    height: 160rem !important;
 
     #carouselExampleIndicators {
       .carousel-indicators {
@@ -619,29 +619,29 @@ body {
             flex-direction: column !important;
 
             img {
-              width: 85vw !important;
-              height: 35vh !important;
+              width: 85rem !important;
+              height: 35rem !important;
             }
 
             .carousel-div-titles {
-              width: 85vw !important;
+              width: 85rem !important;
               margin: 0 !important;
 
               .carousel-title-p {
-                font-size: 6vw !important;
+                font-size: 6rem !important;
                 font-family: Playfair Display !important;
               }
               .price1,
               .price2,
               .price3 {
-                font-size: 6vw !important;
+                font-size: 6rem !important;
               }
               .carousel-ul {
-                font-size: 4vw !important;
+                font-size: 4rem !important;
                 font-weight: normal;
               }
               .carousel-text-p {
-                font-size: 4vw !important;
+                font-size: 4rem !important;
                 font-weight: normal;
               }
             }
@@ -651,8 +651,8 @@ body {
     }
   }
   .carousel-image {
-    width: 40vw !important;
-    height: 50vh !important;
+    width: 40rem !important;
+    height: 50rem !important;
   }
   .carousel-ul {
     list-style: none;
@@ -660,25 +660,25 @@ body {
   .price1::before {
     content: "______";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   .price2::before {
     content: "______";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   .price3::before {
     content: "_____";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   // CAROUSEL INDICATORS
   .carousel-indicators {
     position: relative;
-    top: 115vh !important;
+    top: 115rem !important;
     left: 0;
     right: 0;
     display: flex;
@@ -686,12 +686,12 @@ body {
     margin: 0;
     padding: 0;
     z-index: 1;
-    gap: 0.25vw !important;
+    gap: 0.25rem !important;
   }
 
   .carousel-indicators button {
-    width: 3vw !important;
-    height: 3vw !important;
+    width: 3rem !important;
+    height: 3rem !important;
     border-radius: 50%;
     background-color: #777;
     border: none;
@@ -704,9 +704,9 @@ body {
     opacity: 1;
   }
   .carousel-item div img {
-    width: 45vw !important;
-    padding-bottom: 1vw;
-    height: 60vh !important;
+    width: 45rem !important;
+    padding-bottom: 1rem;
+    height: 60rem !important;
   }
 
   /*
@@ -718,32 +718,32 @@ body {
 */
   .section5 {
     .section5-title-reservation {
-      font-size: 4vw !important;
+      font-size: 4rem !important;
     }
     .section-title {
-      font-size: 8vw !important;
+      font-size: 8rem !important;
     }
   }
 
   .section5-form {
     display: flex;
     flex-direction: column !important;
-    gap: 5vw;
+    gap: 5rem;
 
     #yourname,
     #youremail {
-      width: 85vw !important;
+      width: 85rem !important;
     }
 
     input {
-      width: 85vw !important;
-      height: 8vh !important;
+      width: 85rem !important;
+      height: 8rem !important;
     }
   }
 
   textarea#section5-message {
-    width: 85vw !important;
-    height: 21vh !important;
+    width: 85rem !important;
+    height: 21rem !important;
   }
   /*
 |=======================================================================|
@@ -857,15 +857,15 @@ body {
     .card-img-overlay {
       div {
         h5 {
-          font-size: 4vw !important;
+          font-size: 4rem !important;
         }
         p.card-text {
-          font-size: 3vw !important;
+          font-size: 3rem !important;
         }
         p.card-socials {
           a {
             i {
-              font-size: 4vw !important;
+              font-size: 4rem !important;
             }
           }
         }
@@ -900,8 +900,8 @@ body {
   .section8 {
     .contain-iframe {
       iframe {
-        width: 95vw !important;
-        height: 40vh !important;
+        width: 95rem !important;
+        height: 40rem !important;
       }
     }
 
@@ -925,7 +925,7 @@ body {
 
       div {
         .contain-info {
-          margin-bottom: 5vw !important;
+          margin-bottom: 5rem !important;
         }
       }
     }
@@ -933,17 +933,17 @@ body {
 
   #yourname,
   #youremail {
-    width: 85vw !important;
-    height: 7vh !important;
+    width: 85rem !important;
+    height: 7rem !important;
     background-color: red;
   }
   #subject {
-    width: 85vw;
-    height: 7vh;
+    width: 85rem;
+    height: 7rem;
   }
   #message {
-    width: 85vw;
-    height: 25vh;
+    width: 85rem;
+    height: 25rem;
   }
 
   /*
@@ -959,7 +959,7 @@ body {
 
       div {
         h5 {
-          font-size: 5vw !important;
+          font-size: 5rem !important;
         }
       }
 
@@ -967,11 +967,11 @@ body {
         div {
           .footer-phone,
           .footer-email {
-            width: 10vw !important;
-            font-size: 3vw !important;
+            width: 10rem !important;
+            font-size: 3rem !important;
           }
           .footer-phoneNb {
-            width: 60vw !important;
+            width: 60rem !important;
           }
         }
       }
@@ -981,18 +981,18 @@ body {
         flex-direction: column !important;
         justify-content: start !important;
         align-items: start !important;
-        gap: 1vw !important;
+        gap: 1rem !important;
 
         .div-useful {
           padding-left: 0 !important;
 
           ul > li {
-            width: 30vw !important;
+            width: 30rem !important;
           }
 
           h5 {
-            font-size: 5vw !important;
-            width: 30vw !important;
+            font-size: 5rem !important;
+            width: 30rem !important;
           }
         }
       }
@@ -1013,7 +1013,7 @@ body {
         text-align: center !important;
         .newsletter-p {
           text-align: start !important;
-          width: 85vw !important;
+          width: 85rem !important;
         }
       }
     }
@@ -1021,11 +1021,11 @@ body {
 
   .btn-subscribe {
     position: absolute;
-    right: 12vw;
+    right: 12rem;
   }
 
   #newsletter1 {
-    width: 79.5vw !important;
+    width: 79.5rem !important;
   }
 
   .footer-useful,
@@ -1038,25 +1038,25 @@ body {
   }
 
   .contact-div {
-    margin-top: 1.5vw !important;
+    margin-top: 1.5rem !important;
   }
   .div-useful {
-    padding-left: 5vw !important;
-    width: 15vw !important;
+    padding-left: 5rem !important;
+    width: 15rem !important;
   }
   .useful-ul {
-    width: 20vw !important;
+    width: 20rem !important;
   }
   .newsletter-p {
-    width: 25vw !important;
+    width: 25rem !important;
   }
 
   .scroll-to-top {
     position: fixed;
-    bottom: 3vw;
-    right: 3vw;
-    width: 8vw;
-    height: 8vw;
+    bottom: 3rem;
+    right: 3rem;
+    width: 8rem;
+    height: 8rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid $text-color;
     border-radius: 50%;
@@ -1079,7 +1079,7 @@ body {
 // ======================     TABLET SIZE     ====================== \\
 // ===================================================================\\
 */
-@media (width > 575px) and (width < 1000px) {
+@media (width > 575px) and (width <= 1000px) {
   /*
 |=======================================================================|
 |                                                                       |
@@ -1089,19 +1089,19 @@ body {
 */
   nav {
     font-family: Montserrat;
-    height: 8vh !important;
+    height: 6rem !important;
 
     .cbienbon {
       margin: 0 !important;
-      padding-bottom: 2vh;
+      padding-bottom: 1.5rem;
     }
     .btn-bookatable {
       display: none !important;
     }
     .navbar-toggler-icon {
       filter: invert(1) brightness(100%);
-      margin-bottom: 1vw !important;
-      font-size: 3vw !important;
+      margin-bottom: 1rem !important;
+      font-size: 2rem !important;
     }
   }
   header {
@@ -1122,35 +1122,37 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    height: 100vh;
+    height: 65rem;
 
     .header-titre-container {
-      width: 100% !important;
+      width: auto !important;
       text-align: center !important;
     }
 
     .header-titre {
-      font-size: 5vw !important;
+      font-size: 3.5rem !important;
     }
 
     .header-h2 {
       font-family: Playfair Display !important;
-      font-size: 4vw !important;
-      width: 85vw !important;
+      font-size: 2.5rem !important;
+      width: 55rem !important;
     }
 
     .header-content {
-      gap: 0vw;
+      gap: 0rem;
       display: flex !important;
       flex-direction: column !important;
-      width: 98vw !important;
+      width: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .header-btn-container {
       @include d-flex-row-center;
 
       a {
-        font-size: 2.75vw !important;
+        font-size: 1.5rem !important;
       }
     }
   }
@@ -1205,31 +1207,38 @@ body {
   }
 
   .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100%;
     height: 100%;
     border: none;
   }
 
+  // .btn-player {
+  //   align-self: flex-start !important;
+  // }
+
   .div-player i {
-    margin: 0;
-    padding: 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-self: center !important;
+    text-align: center !important;
   }
   .div-player {
-    display: inline-block !important;
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    position: absolute;
-    right: 41vw !important;
-    width: 25vw !important;
-    height: 25vw !important;
+    align-self: center !important;
+    position: relative !important;
+    right: 23.5rem !important;
+    height: 11rem !important;
+    width: 11rem !important;
     float: none !important;
   }
   .play-button {
-    width: 15vw;
-    height: 15vw;
+    width: 7rem;
+    height: 7rem;
     border-width: 50px !important;
     background: $text-color;
     border-radius: 50%;
@@ -1237,9 +1246,7 @@ body {
     justify-content: center !important;
     align-items: center !important;
     align-self: center !important;
-    position: relative;
-    left: 25% !important;
-    top: 10% !important;
+    position: relative !important;
     z-index: 1;
     cursor: pointer;
     box-shadow: 0 0 0 rgba(210, 168, 74, 0.7);
@@ -1263,7 +1270,7 @@ body {
       box-shadow: 0 0 0 0 rgb(210, 167, 74);
     }
     70% {
-      box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
+      box-shadow: 0 0 0 2rem rgba(210, 168, 74, 0);
     }
     100% {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0);
@@ -1271,11 +1278,9 @@ body {
   }
   .div-player {
     overflow: hidden !important;
-    width: 10vw;
-    height: 15vw;
   }
   .div2-player {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
   @keyframes play-btn-scale {
@@ -1314,31 +1319,36 @@ body {
     z-index: -1;
     background-size: cover;
     background-position-y: 75%;
-    height: 140vh;
-
-    .section1-div-img {
-      height: 75% !important;
-      margin-left: 6vw !important;
-    }
-    img[src="./public/assets/img/about.jpg"] {
-      width: 45vw;
-    }
+    height: 95rem;
+    width: auto !important;
 
     .section-title {
-      width: 80vw !important;
-      padding-top: 70vw !important;
-      padding-left: 3.5vw !important;
+      width: 55rem !important;
+      padding-top: 43rem !important;
+      padding-left: 2rem !important;
+      font-size: 2.5rem !important;
     }
 
     .section-title2 {
-      width: 85vw !important;
-      padding-left: 3.5vw !important;
+      width: 58rem !important;
+      padding-left: 2rem !important;
+      font-size: 1.5rem !important;
     }
 
     .section1-content-container {
-      width: 85vw !important;
-      font-size: 2.5vw !important;
-      padding-left: 3.5vw !important;
+      width: 55rem !important;
+      font-size: 1.5rem !important;
+      padding-left: 2rem !important;
+
+      p {
+        padding-left: 0.5rem !important;
+      }
+
+      div {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        text-align: center !important;
+      }
     }
 
     #section1 {
@@ -1359,27 +1369,31 @@ body {
     height: 2px;
     background-color: $border-color;
     opacity: 25%;
-    width: 20vw !important;
+    width: 10rem !important;
   }
 
   // CORNER BORDERS
   .section1-div-img {
-    position: relative;
-    display: inline-block;
-    overflow: visible;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    right: 3rem !important;
+    width: auto !important;
   }
   .section1-div-img img {
-    width: 90vw !important;
-    height: auto;
-    position: absolute;
-    right: -32vw !important;
+    width: 55rem !important;
+    // height: auto;
+    position: absolute !important;
+    display: flex !important;
   }
   // TOP-LEFT
   .section1-div-img::before {
     content: "";
     position: absolute;
-    top: 7vh !important;
-    right: 47.5vw !important;
+    top: 7rem !important;
+    right: 47.5rem !important;
     border-top: 5px solid $text-color;
     border-left: 5px solid $text-color;
     z-index: 1;
@@ -1388,27 +1402,27 @@ body {
   .section1-div-img::after {
     content: "";
     position: absolute;
-    bottom: 51vh;
-    left: 21.5vw !important;
+    bottom: 51rem;
+    left: 21.5rem !important;
     border-bottom: 5px solid $text-color;
     border-right: 5px solid $text-color;
     z-index: 1;
   }
   .section1-div-img::before,
   .section1-div-img::after {
-    width: 8vw;
-    height: 8vw;
+    width: 8rem;
+    height: 8rem;
   }
 
   // TRANSITION ON HOVER -- BOTTOM-RIGHT
   .section1-div-img:hover::after {
-    bottom: 50.2vh !important;
-    left: 22.5vw !important;
+    bottom: 50.2rem !important;
+    left: 22.5rem !important;
   }
   // TRANSITION ON HOVER -- TOP-LEFT
   .section1-div-img:hover::before {
-    top: 6.2vh !important;
-    right: 48.5vw !important;
+    top: 6.2rem !important;
+    right: 48.5rem !important;
   }
   // TRANSITION IMG SIZE++
   .section1-div-img:hover {
@@ -1428,10 +1442,10 @@ body {
 |=======================================================================|
 */
   .cards {
-    padding: 5vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .cards:hover {
     background-image: linear-gradient($card-hover);
@@ -1460,9 +1474,11 @@ body {
   .section3 {
     .menu-filter-container {
       .menu-selection {
-        gap: 0 !important;
+        gap: 0.5rem !important;
+        font-size: 1.75rem !important;
         margin: 0;
         padding: 0;
+        padding-top: 2rem !important;
       }
     }
   }
@@ -1472,12 +1488,12 @@ body {
   }
 
   .img-menu {
-    border: 0.4vw solid #484642;
+    border: 0.4rem solid #484642;
   }
   .starters-item > img,
   .salads-item > img,
   .specialty-item > img {
-    width: 15vw;
+    width: 10rem;
   }
 
   .food-title1,
@@ -1493,57 +1509,57 @@ body {
   }
 
   .food-title1::after {
-    content: "..................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "...........................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title2::after {
-    content: ".....................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "..............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title3::after {
-    content: "..................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "...........................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title4::after {
-    content: "....................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "..............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title5::after {
-    content: ".....................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "...............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title6::after {
-    content: "...................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title7::after {
-    content: "...........................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "....................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title8::after {
-    content: ".....................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "...............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   .food-title9::after {
-    content: "....................................................................................";
-    padding: 1vw;
-    width: 50vw;
+    content: "..............................................................................................................";
+    padding: 1rem;
+    width: 50rem;
     font-weight: normal;
   }
   // SECTION 3 RADIO
@@ -1652,7 +1668,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     background-size: cover;
-    height: 160vh !important;
+    height: 160rem !important;
 
     #carouselExampleIndicators {
       .carousel-indicators {
@@ -1666,28 +1682,28 @@ body {
             flex-direction: column !important;
 
             img {
-              width: 85vw !important;
+              width: 85rem !important;
             }
 
             .carousel-div-titles {
-              width: 85vw !important;
+              width: 85rem !important;
               margin: 0 !important;
 
               .carousel-title-p {
-                font-size: 5vw !important;
+                font-size: 5rem !important;
                 font-family: Playfair Display !important;
               }
               .price1,
               .price2,
               .price3 {
-                font-size: 5vw !important;
+                font-size: 5rem !important;
               }
               .carousel-ul {
-                font-size: 3vw !important;
+                font-size: 3rem !important;
                 font-weight: normal;
               }
               .carousel-text-p {
-                font-size: 3vw !important;
+                font-size: 3rem !important;
                 font-weight: normal;
               }
             }
@@ -1697,8 +1713,8 @@ body {
     }
   }
   .carousel-image {
-    width: 40vw !important;
-    height: 50vh !important;
+    width: 40rem !important;
+    height: 50rem !important;
   }
   .carousel-ul {
     list-style: none;
@@ -1706,25 +1722,25 @@ body {
   .price1::before {
     content: "______";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   .price2::before {
     content: "______";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   .price3::before {
     content: "_____";
     position: absolute;
-    margin-top: 0.3vw;
+    margin-top: 0.3rem;
     color: $text-color;
   }
   // CAROUSEL INDICATORS
   .carousel-indicators {
     position: relative;
-    top: 115vh !important;
+    top: 115rem !important;
     left: 0;
     right: 0;
     display: flex;
@@ -1732,12 +1748,12 @@ body {
     margin: 0;
     padding: 0;
     z-index: 1;
-    gap: 0.25vw !important;
+    gap: 0.25rem !important;
   }
 
   .carousel-indicators button {
-    width: 1vw !important;
-    height: 1vw !important;
+    width: 1rem !important;
+    height: 1rem !important;
     border-radius: 50%;
     background-color: #777;
     border: none;
@@ -1750,9 +1766,9 @@ body {
     opacity: 1;
   }
   .carousel-item div img {
-    width: 45vw !important;
-    padding-bottom: 1vw;
-    height: 60vh !important;
+    width: 45rem !important;
+    padding-bottom: 1rem;
+    height: 60rem !important;
   }
 
   /*
@@ -1765,7 +1781,7 @@ body {
   .section5-form {
     display: flex;
     flex-direction: column !important;
-    gap: 1.5vw;
+    gap: 1.5rem;
 
     // input {
     //   width: 33% !important;
@@ -1773,18 +1789,18 @@ body {
 
     #yourname,
     #youremail {
-      width: 85vw !important;
+      width: 85rem !important;
     }
 
     input {
-      width: 85vw !important;
-      height: 8vh !important;
+      width: 85rem !important;
+      height: 8rem !important;
     }
   }
 
   textarea#section5-message {
-    width: 85vw !important;
-    height: 21vh !important;
+    width: 85rem !important;
+    height: 21rem !important;
   }
   /*
 |=======================================================================|
@@ -1898,15 +1914,15 @@ body {
     .card-img-overlay {
       div {
         h5 {
-          font-size: 4vw !important;
+          font-size: 4rem !important;
         }
         p.card-text {
-          font-size: 3vw !important;
+          font-size: 3rem !important;
         }
         p.card-socials {
           a {
             i {
-              font-size: 4vw !important;
+              font-size: 4rem !important;
             }
           }
         }
@@ -1941,8 +1957,8 @@ body {
   .section8 {
     .contain-iframe {
       iframe {
-        width: 98vw !important;
-        height: 40vh !important;
+        width: 98rem !important;
+        height: 40rem !important;
       }
     }
 
@@ -1959,7 +1975,7 @@ body {
 
       div {
         .contain-info {
-          margin-bottom: 5vw !important;
+          margin-bottom: 5rem !important;
         }
       }
     }
@@ -1971,17 +1987,17 @@ body {
 
   #yourname,
   #youremail {
-    width: 85vw !important;
-    height: 7vh !important;
+    width: 85rem !important;
+    height: 7rem !important;
     background-color: red;
   }
   #subject {
-    width: 85vw;
-    height: 7vh;
+    width: 85rem;
+    height: 7rem;
   }
   #message {
-    width: 85vw;
-    height: 25vh;
+    width: 85rem;
+    height: 25rem;
   }
 
   /*
@@ -1997,7 +2013,7 @@ body {
 
       div {
         h5 {
-          font-size: 5vw !important;
+          font-size: 5rem !important;
         }
       }
 
@@ -2005,7 +2021,7 @@ body {
         display: flex !important;
         justify-content: start !important;
         align-items: center !important;
-        gap: 30vw !important;
+        gap: 30rem !important;
       }
     }
 
@@ -2017,7 +2033,7 @@ body {
         text-align: center !important;
         .newsletter-p {
           text-align: start !important;
-          width: 85vw !important;
+          width: 85rem !important;
         }
       }
     }
@@ -2025,11 +2041,11 @@ body {
 
   .btn-subscribe {
     position: absolute;
-    right: 12vw;
+    right: 12rem;
   }
 
   #newsletter1 {
-    width: 79.5vw !important;
+    width: 79.5rem !important;
   }
 
   .footer-useful,
@@ -2042,25 +2058,25 @@ body {
   }
 
   .contact-div {
-    margin-top: 1.5vw !important;
+    margin-top: 1.5rem !important;
   }
   .div-useful {
-    padding-left: 5vw !important;
-    width: 15vw !important;
+    padding-left: 5rem !important;
+    width: 15rem !important;
   }
   .useful-ul {
-    width: 20vw !important;
+    width: 20rem !important;
   }
   .newsletter-p {
-    width: 25vw !important;
+    width: 25rem !important;
   }
 
   .scroll-to-top {
     position: fixed;
-    bottom: 3vw;
-    right: 3vw;
-    width: 6vw;
-    height: 6vw;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid $text-color;
     border-radius: 50%;
@@ -2214,7 +2230,7 @@ body {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0.5);
     }
     70% {
-      box-shadow: 0 0 0 2vw rgba(210, 168, 74, 0);
+      box-shadow: 0 0 0 2rem rgba(210, 168, 74, 0);
     }
     100% {
       box-shadow: 0 0 0 0 rgba(210, 168, 74, 0);
