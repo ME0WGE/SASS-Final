@@ -762,25 +762,21 @@ body {
     flex-direction: column !important;
     gap: 1.5rem;
 
-    // input {
-    //   width: 33% !important;
-    // }
-
     #yourname,
     #youremail {
-      width: 52.4rem !important;
-      height: 5rem !important;
+      width: 32rem !important;
+      height: 4rem !important;
     }
 
     input {
-      width: 52.4rem !important;
-      height: 5rem !important;
+      width: 32rem !important;
+      height: 4rem !important;
     }
   }
 
   textarea#section5-message {
-    width: 52.4rem !important;
-    height: 21rem !important;
+    width: 32rem !important;
+    height: 12rem !important;
   }
   /*
 |=======================================================================|
@@ -792,11 +788,20 @@ body {
   .section6-img {
     display: flex !important;
     flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
 
     div {
-      width: 33% !important;
+      // width: 33% !important;
+      width: 28rem !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
       img {
-        width: 100% !important;
+        width: 28rem !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
       }
     }
   }
@@ -883,7 +888,7 @@ body {
   .section7 {
     .card {
       overflow: hidden !important;
-      width: 40rem !important;
+      width: 28rem !important;
     }
 
     .section7-img {
@@ -894,15 +899,15 @@ body {
     .card-img-overlay {
       div {
         h5 {
-          font-size: 2rem !important;
+          font-size: 1.5rem !important;
         }
         p.card-text {
-          font-size: 1.5rem !important;
+          font-size: 1.25rem !important;
         }
         p.card-socials {
           a {
             i {
-              font-size: 2rem !important;
+              font-size: 1.5rem !important;
             }
           }
         }
@@ -937,8 +942,8 @@ body {
   .section8 {
     .contain-iframe {
       iframe {
-        width: 58.8rem !important;
-        height: 25rem !important;
+        width: 34.2rem !important;
+        height: 26rem !important;
       }
     }
 
@@ -946,12 +951,43 @@ body {
       .contain-info {
         padding: 0 !important;
         margin: 0 !important;
+
+        div[class="pe-3"] {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+
+          i {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            width: 4rem !important;
+            height: 4rem !important;
+          }
+        }
+
+        .div-location,
+        .div-open,
+        .div-mail,
+        .div-phone {
+          p {
+            font-size: 1.25rem !important;
+          }
+        }
       }
     }
 
     .section8-content {
       display: flex !important;
       flex-direction: column !important;
+      padding-left: 1rem !important;
+      padding-bottom: 0em !important;
+
+      .section8-form-container {
+        padding-top: 1rem !important;
+        margin-left: 2rem !important;
+      }
 
       div {
         .contain-info {
@@ -968,19 +1004,28 @@ body {
 
   #yourname,
   #youremail {
-    width: 52.4rem !important;
-    height: 5rem !important;
+    width: 32rem !important;
+    height: 4rem !important;
   }
   #yourname {
     margin: 0 !important;
   }
   #subject {
-    width: 52.4rem !important;
-    height: 5rem !important;
+    width: 32rem !important;
+    height: 4rem !important;
   }
   #message {
-    width: 52.4rem !important;
-    height: 18rem !important;
+    width: 32rem !important;
+    height: 15.5rem !important;
+  }
+
+  .btn-send-message {
+    // width: 10rem !important;
+    height: 4rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   /*
@@ -995,8 +1040,7 @@ body {
       @include d-flex-column-center;
       div[class="col-6 col-md-2"] {
         width: 30rem !important;
-        padding-left: 5rem !important;
-        // text-align: center !important;
+        padding: 0rem !important;
         h5 {
           font-size: 2rem !important;
         }
@@ -1005,9 +1049,27 @@ body {
       .div-useful-container {
         display: flex !important;
         justify-content: start !important;
-        align-items: center !important;
-        padding-left: 10rem !important;
-        gap: 5rem !important;
+        align-items: start !important;
+        gap: 1rem !important;
+      }
+
+      .newsletter-container {
+        align-items: start !important;
+        justify-content: start !important;
+        margin-top: 0rem !important;
+
+        .lh-lg {
+          .newsletter-p {
+            width: 30rem !important;
+            font-size: 1rem !important;
+          }
+
+          .newsletter-email-div {
+            .btn {
+              right: 1.2rem !important;
+            }
+          }
+        }
       }
     }
 
@@ -1032,13 +1094,14 @@ body {
   }
 
   #newsletter1 {
-    width: 32.2rem !important;
+    width: 30rem !important;
   }
 
   .footer-useful,
   .footer-services,
   .footer-newsletter {
     font-family: Playfair Display;
+    text-align: start !important;
   }
   .footer-phoneNb {
     font-family: Playfair Display;
@@ -1048,8 +1111,12 @@ body {
     margin-top: 1.5rem !important;
   }
   .div-useful-container {
-    align-self: center !important;
+    align-self: flex-start !important;
+    flex-direction: column !important;
+    padding: 0rem !important;
+
     .div-useful {
+      padding: 0rem !important;
       width: 20rem !important;
 
       ul {
@@ -1063,13 +1130,6 @@ body {
   }
   .useful-ul {
     width: 0rem !important;
-  }
-  .newsletter-p {
-    width: 1rem !important;
-  }
-
-  form {
-    padding-right: 2rem !important;
   }
 
   .scroll-to-top {
