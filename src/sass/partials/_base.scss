@@ -443,7 +443,7 @@ body {
     .menu-filter-container {
       .menu-selection {
         gap: 0.5rem !important;
-        font-size: 1.75rem !important;
+        font-size: 1.25rem !important;
         margin: 0;
         padding: 0;
         padding-top: 2rem !important;
@@ -461,7 +461,16 @@ body {
   .starters-item > img,
   .salads-item > img,
   .specialty-item > img {
-    width: 10rem;
+    width: 6.5rem !important;
+    height: 6.5rem !important;
+  }
+  .starters-item,
+  .salads-item,
+  .specialty-item {
+    div {
+      font-size: 1.25rem !important;
+      width: 26rem !important;
+    }
   }
 
   .food-title1,
@@ -477,55 +486,55 @@ body {
   }
 
   .food-title1::after {
-    content: "...........................................................................................................";
+    content: "..........................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title2::after {
-    content: "..............................................................................................................";
+    content: "....................................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title3::after {
-    content: "...........................................................................................................";
+    content: ".............................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title4::after {
-    content: "..............................................................................................................";
+    content: ".................................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title5::after {
-    content: "...............................................................................................................";
+    content: "...............................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title6::after {
-    content: "............................................................................................................";
+    content: "...............................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title7::after {
-    content: "....................................................................................................";
+    content: "......................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title8::after {
-    content: "...............................................................................................................";
+    content: "...........................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
   }
   .food-title9::after {
-    content: "..............................................................................................................";
+    content: ".............................";
     padding: 1rem;
     width: 50rem;
     font-weight: normal;
@@ -599,6 +608,7 @@ body {
   .cards-menu {
     display: flex;
     flex-direction: column;
+    margin-left: -3rem !important;
   }
 
   .cards-menu > div {
