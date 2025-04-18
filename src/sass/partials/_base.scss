@@ -648,6 +648,11 @@ body {
     background-size: cover;
     height: 90rem !important;
 
+    .section-title,
+    p {
+      margin-left: 1rem !important;
+    }
+
     #carouselExampleIndicators {
       .carousel-indicators {
         margin: 0 !important;
@@ -660,15 +665,17 @@ body {
             flex-direction: column !important;
 
             img {
-              width: 52.8rem !important;
+              width: 32rem !important;
+              height: 20rem !important;
             }
 
             .carousel-div-titles {
-              width: 55rem !important;
+              width: 33rem !important;
               margin: 0 !important;
-              padding-left: 1rem !important;
+              // padding-left: 1rem !important;
 
               .carousel-title-p {
+                margin-left: 1rem !important;
                 font-size: 3rem !important;
                 font-family: Playfair Display !important;
               }
@@ -694,6 +701,7 @@ body {
 
   .carousel-ul {
     list-style: none;
+    margin-left: 1rem !important;
   }
   .price1::before {
     content: "______";
@@ -716,7 +724,7 @@ body {
   // CAROUSEL INDICATORS
   .carousel-indicators {
     position: relative;
-    top: 39rem !important;
+    top: 65rem !important;
     left: 0;
     right: 0;
     display: flex;
